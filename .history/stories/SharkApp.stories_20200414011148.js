@@ -17,13 +17,10 @@ export default {
 export const MyCustomButton = () => <CustomButton />;
 
 export const MyHeader = () => <div>
-  <Header text="1. Pick the size of your shark."/>
-  <Header text="2. Pick the location."/>
-  <Header text="3. How endangered is the shark?"/>
-  <Header text="3. How endangered is the shark?"/>
-  <Header text="About"/>
-  <Header text="How you can help"/>
-</div>
+  <Header text="Pick the size of your shark."/>
+  <Header text="Pick the location."/>
+  <Header text="How endangered is the shark?"/>
+</div>;
 
 export const MyMenu = () => <Menu />;
 

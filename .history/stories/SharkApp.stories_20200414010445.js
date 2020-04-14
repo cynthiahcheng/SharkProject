@@ -10,20 +10,17 @@ import HelpPage from '../pages/HelpPage';
 import AboutPage from '../pages/AboutPage';
 
 export default {
-  title: "Shark App",
-  component: CustomButton,
-};
+    title: "Shark App",
+    component: CustomButton,
+  };
 
-export const MyCustomButton = () => <CustomButton />;
+export const MyCustomButton = () =><CustomButton />;
 
-export const MyHeader = () => <div>
-  <Header text="1. Pick the size of your shark."/>
-  <Header text="2. Pick the location."/>
-  <Header text="3. How endangered is the shark?"/>
-  <Header text="3. How endangered is the shark?"/>
-  <Header text="About"/>
-  <Header text="How you can help"/>
-</div>
+export const MyHeader = () => 
+<Header />
+<Header />
+<Header />
+
 
 export const MyMenu = () => <Menu />;
 

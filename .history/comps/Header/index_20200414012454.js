@@ -9,7 +9,7 @@ const Header = ({ text }) => <div className="pick_your_shark">
 
 Header.defaultProps = {
     fontSize: 45,
-    text: "1. Pick the size of your shark."
+    text: "Pick the size of your shark."
 }
 
 export default Header;

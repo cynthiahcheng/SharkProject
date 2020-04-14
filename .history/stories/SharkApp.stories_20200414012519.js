@@ -20,9 +20,6 @@ export const MyHeader = () => <div>
   <Header text="1. Pick the size of your shark."/>
   <Header text="2. Pick the location."/>
   <Header text="3. How endangered is the shark?"/>
-  <Header text="3. How endangered is the shark?"/>
-  <Header text="About"/>
-  <Header text="How you can help"/>
 </div>
 
 export const MyMenu = () => <Menu />;
