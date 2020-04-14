@@ -1,0 +1,5 @@
+.tut_page_buttons {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
