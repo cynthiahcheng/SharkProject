@@ -9,7 +9,7 @@ const TutPage = ({}) => {
     return <div className="tutorial_page">
         <div className="tut_page_buttons">
         <div id="home_button">
-            <CustomButton color={tutcolor} text={"TUTORIAL"} onClick={()=>{
+            <CustomButton color={tutcolor} text={"HOME"} onClick={()=>{
                 var new_color = "#999";
                 setTutColor(new_color);
                 }} />
