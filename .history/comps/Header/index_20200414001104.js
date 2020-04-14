@@ -6,9 +6,9 @@ require('typeface-sniglet');
 const Header = () => <div className = "step">
     <h1>1</h1>
 
+</div>
 <div className = "pick_your_shark">
-    <h1> Pick the shark size.</h1>
-    </div>
+    <h1> Pick your Shark Size.</h1>
     </div>
 
 Header.defaultProps = {

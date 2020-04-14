@@ -7,7 +7,7 @@ const Header = () => <div className = "step">
     <h1>1</h1>
 
 <div className = "pick_your_shark">
-    <h1> Pick the shark size.</h1>
+    <h1> Pick the Shark Size.</h1>
     </div>
     </div>
 

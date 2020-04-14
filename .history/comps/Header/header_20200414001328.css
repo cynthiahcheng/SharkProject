@@ -1,24 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Sniglet&display=swap");
+@import url(https://fonts.google.com/specimen/Open+Sans?sidebar.open&selection.family=Open+Sans);
 
 .step {
-   display:inline-flex;
+   display:inline-block;
+   border-radius:18px;
    padding:15px;
-   font-family:'Sniglet', cursive;
-   font-size:60pt;
-   font-weight: 0;
+   font-family:'Open Sans', sans-serif;
+   font-size:45pt;
    color:#FFF;
    background-color: #0D1E4B;
    margin:10px;
-   text-align: left;
 }
 
 .pick_your_shark{
     display:inline-flex;
+    border-radius:18px;
     padding:15px;
     font-family:'Open Sans', sans-serif;
     font-size:45pt;
     color:#FFF;
     background-color: #0D1E4B;
     margin:10px;
-    text-align: center;
 }

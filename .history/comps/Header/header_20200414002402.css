@@ -9,16 +9,17 @@
    color:#FFF;
    background-color: #0D1E4B;
    margin:10px;
-   text-align: left;
 }
 
 .pick_your_shark{
-    display:inline-flex;
+    /* display:inline-flex; */
     padding:15px;
     font-family:'Open Sans', sans-serif;
     font-size:45pt;
     color:#FFF;
     background-color: #0D1E4B;
     margin:10px;
+    /* align-items: center; */
     text-align: center;
+    /* justify-content: center; */
 }
