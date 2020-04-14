@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
 .custom_button_box {
     display:inline-flex;
     border-radius:18px;
     padding:15px;
-    font-family:sniglet;
+    font-family:'Sniglet', cursive;
     font-weight:500;
     font-size:50pt;
     color:#FFF;
