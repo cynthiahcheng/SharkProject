@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.menu {
+    background-color: #1E4DCB;
+    height: 88px;
+    width: 375px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-flex;
+}
+
+.menu_icons {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon {
+    height: 100%;
+    width: 100%;
+}
+
+#iconback {
+    flex: 1;
+    display: inline-flex;
+    flex: flex-start;
+}
+
+#iconlogo {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+}
+#iconham {
+    flex: 1;
+    display: inline-flex;
+    align-items: right;
+}
