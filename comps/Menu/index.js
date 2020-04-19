@@ -2,27 +2,25 @@ import React from 'react';
 import './menu.css';
 
 const backImg = require('./SVG/Back_Arrow.svg');
-const logoImg = require('./SVG/Shark_Logo.svg');
+const sharkImg = require('./SVG/Shark_Logo.svg');
 const hamImg = require('./SVG/Hamburger_Menu.svg');
 
 
-const Menu = ({backimg, logoimg, hamimg}) => <div className='menu'>
-    <div className='menu_icons'>
-        <div idName="iconback">
-        <img className="icon" src={backimg} />
+const Menu = ({backimg, sharkimg, hamimg}) => <div className='menu'>
+        <div className='back_icon'>
+            <img idName="back_icon_inner" img className="icons" src={backimg} />
         </div>
-        <div idName="iconlogo">
-        <img className="icon" src={logoimg} />
+        <div className="shark_icon">
+            <img id="shark_icon_inner" className="icons" src={sharkimg} />
         </div>
-        <div idName="iconham">
-        <img className="icon" src={hamimg} />
+        <div className="ham_icon">
+        <img id="ham_icon_inner" className="icons" src={hamimg} />
         </div>
-    </div>
 </div>
 
     Menu.defaultProps = {
         backimg: backImg,
-        logoimg: logoImg,
+        sharkimg: sharkImg,
         hamimg: hamImg
     }
 
