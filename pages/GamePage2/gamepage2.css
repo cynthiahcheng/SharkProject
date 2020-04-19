@@ -1,0 +1,22 @@
+body, html {
+    width:395px;
+ }
+ 
+ .game_page2 {
+     display:flex;
+     flex-direction:column;
+     align-items: center;
+     background-color:#0D1E4B;
+ }
+ 
+ .location_icons {
+     margin-top:15px;
+     margin-bottom:-40px;
+     cursor:pointer;
+ }
+ 
+ .location_title {
+     margin-top:-20px;
+     margin-bottom:5px;;
+     cursor:pointer;
+ }
