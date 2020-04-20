@@ -1,8 +1,6 @@
 import React from 'react';
 import './cb.css';
 
-require('typeface-sniglet');
-
 const CustomButton = ({text, color, fontsize, onClick}) => <div
     style={{backgroundColor:color,boxShadow:"1px 1px 5px" + color, fontSize:fontsize}}
     className="custom_button_box"
@@ -19,7 +17,7 @@ function ButtonClick(){
 CustomButton.defaultProps = {
     text:"Default",
     color:"#00D2AE",
-    fontsize:"50pt",
+    fontsize:"50px",
     onClick:ButtonClick
 }
 

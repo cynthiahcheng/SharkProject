@@ -2,7 +2,7 @@ body, html {
     width:395px;
  }
  
- .game_page {
+ .game_page3 {
      padding:0px 10px 0px 10px;
      display:flex;
      flex-direction:column;
@@ -10,14 +10,14 @@ body, html {
      background-color:#0D1E4B;
  }
  
- .shark_shadows {
+ .status_icons {
      margin-top:15px;
      margin-bottom:-8px;
      cursor:pointer;
  }
  
- .shark_sizes {
+ .status_title {
      margin-top:-20px;
      margin-bottom:5px;;
      cursor:pointer;
- } 
+ }
