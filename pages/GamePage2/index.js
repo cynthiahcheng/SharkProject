@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import './gamepage2.css';
 import Header from '../../comps/Header';
 import Menu from '../../comps/Menu';
@@ -11,19 +12,19 @@ const GamePage2 = ({tropical, temperate, polar}) => <div className="game_page2">
 <Menu />
 <Header color={"#FFF"} text={"2. Pick the location."}/>
 <div className="location_icons">
-    <img id="tropical_icon" src={tropical} />
+    <Link href="/GamePage3"><img id="tropical_icon" src={tropical} /></Link>
 </div>
 <div className="location_title"><Header color={"#FFF"} text={"tropical"} /></div>
 
 <div className="location_icons">
-    <img id="temperate_icon" src={temperate} />
+    <Link href="/GamePage3"><img id="temperate_icon" src={temperate} /></Link>
 </div>
 <div className="location_title"><Header color={"#FFF"} text={"temperate"} /></div>
 
 <div className="location_icons">
-    <img id="polar_icon" src={polar} />
+    <Link href="/GamePage3"><img id="polar_icon" src={polar} /></Link>
 </div>
-<div className="location_title"><Header color={"#FFF"} text={"polar"} /></div>>
+<div className="location_title"><Header color={"#FFF"} text={"polar"} /></div>
 
 </div>
 

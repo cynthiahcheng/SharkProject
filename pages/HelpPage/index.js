@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Link from 'next/link';
 import './helppage.css';
 import CustomButton from '../../comps/CustomButton';
 import Menu from '../../comps/Menu';
@@ -21,10 +22,10 @@ const HelpPage = ({}) => {
                     <p>Thanks for using ConservaShark, we hope you enjoyed learning about shark conservation!</p>
                 </div>
                 <div id="go_home_button">
-                    <CustomButton color={color} text={"RETURN TO HOME"} fontsize={"30pt"} onClick={()=>{
+                    <Link href="/index"><CustomButton color={color} text={"RETURN TO HOME"} fontsize={"30pt"} onClick={()=>{
                     var new_color = "#999";
                     setColor(new_color);
-                    }} />
+                    }} /></Link>
                 </div>
             </div>
 }
