@@ -1,0 +1,40 @@
+body, html {
+    width:395px;
+ }
+
+ .text {
+     font-family: open sans;
+     color:#ffff;
+ }
+
+ #headers{
+     font-size:40px;
+ }
+ 
+ #fun_fact{
+     font-size: 25px;
+ }
+
+ #desc{
+    font-size: 20px;
+}
+
+ .meet_page {
+     padding:0px 10px 0px 10px;
+     display:flex;
+     flex-direction:column;
+     align-items: center;
+     background-color:#0D1E4B;
+ }
+/*  
+ .shark_shadows {
+     margin-top:15px;
+     margin-bottom:-8px;
+     cursor:pointer;
+ }
+ 
+ .shark_sizes {
+     margin-top:-20px;
+     margin-bottom:5px;;
+     cursor:pointer;
+ }  */
