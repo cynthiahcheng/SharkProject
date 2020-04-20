@@ -3,7 +3,7 @@ import './meetpage.css';
 import CustomButton from '../../comps/CustomButton';
 import Menu from '../../comps/Menu';
 
-const sharkPhoto = require('./SVG/Shark_Photo.svg')
+const sharkRectangle = require('./SVG/Rectangle.svg')
 const sharkSilhouette = require('./SVG/Shark_Silhouette.svg');
 const sharkLocation = require('./SVG/Snowflake.svg')
 const sharkStatus = require('./SVG/Status_Icons.svg')
@@ -15,7 +15,7 @@ const MeetPage = ({ }) => {
         <Menu />
         <div id="headers">
             <h1>Meet the Shark!</h1>
-            <div className="shark_photo"><img src={sharkPhoto} /></div>
+            <div className="shark_rectangle"><img src={sharkRectangle} /></div>
             <h1>Shark Name</h1>
         </div>
         <div id="results">
