@@ -1,12 +1,14 @@
 import React from 'react';
 import './gamepage2.css';
 import Header from '../../comps/Header';
+import Menu from '../../comps/Menu';
 
 const Polar = require('./SVG/Polar.png');
 const Temperate = require('./SVG/Temperate.png');
 const Tropical = require('./SVG/Tropical.png');
 
 const GamePage2 = ({tropical, temperate, polar}) => <div className="game_page2">
+<Menu />
 <Header color={"#FFF"} text={"2. Pick the location."}/>
 <div className="location_icons">
     <img id="tropical_icon" src={tropical} />

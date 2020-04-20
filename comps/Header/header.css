@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Sniglet&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
 
 .pick_your_shark{
     display:inline-flex;
-    padding:15px;
     font-family:'OpenSans', sans-serif;
-    font-size:35pt;
+    font-size:45px;
     color:#000;
-    margin:10px;
     text-align: center;
 }

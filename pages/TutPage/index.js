@@ -15,7 +15,7 @@ const TutPage = ({}) => {
                 }} />
         </div>
         <div id="start_button">
-            <CustomButton color={color} text={"START"} fontsize={"90pt"} onClick={()=>{
+            <CustomButton color={color} text={"START"} fontsize={"90px"} onClick={()=>{
                 var new_color = "#999";
                 setColor(new_color);
                 }} />
