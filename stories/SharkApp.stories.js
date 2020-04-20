@@ -5,6 +5,8 @@ import Menu from '../comps/Menu';
 import TitlePage from '../pages/TitlePage';
 import TutPage from '../pages/TutPage';
 import GamePage from '../pages/GamePage';
+import GamePage2 from '../pages/GamePage2';
+import GamePage3 from '../pages/GamePage3';
 import ResPage from '../pages/ResPage';
 import HelpPage from '../pages/HelpPage';
 import AboutPage from '../pages/AboutPage';
@@ -34,6 +36,8 @@ export const MyAboutPage = () => <AboutPage />;
 export const MyTutPage = () => <TutPage />;
 
 export const MyGamePage = () => <GamePage />;
+export const MyGamePage2 = () => <GamePage2 />;
+export const MyGamePage3 = () => <GamePage3 />;
 
 export const MyResPage = () => <ResPage />;
 
