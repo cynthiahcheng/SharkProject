@@ -8,6 +8,7 @@ import GamePage from '../pages/GamePage';
 import ResPage from '../pages/ResPage';
 import HelpPage from '../pages/HelpPage';
 import AboutPage from '../pages/AboutPage';
+import MeetPage from '../pages/MeetPage';
 
 export default {
   title: "Shark App",
@@ -38,3 +39,5 @@ export const MyGamePage = () => <GamePage />;
 export const MyResPage = () => <ResPage />;
 
 export const MyHelpPage = () => <HelpPage />;
+
+export const MyMeetPage = () => <MeetPage />;
