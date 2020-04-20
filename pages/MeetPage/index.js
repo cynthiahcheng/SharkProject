@@ -19,9 +19,9 @@ const MeetPage = ({ }) => {
             <h1>Shark Name</h1>
         </div>
         <div id="results">
-        <div className="shark_silhuette"><img src={sharkSilhouette} text={"Small"} /></div>
-        <div className="shark_location"><img src={sharkLocation} text={"Polar"} /></div>
-        <div className="shark_status"><img src={sharkStatus} text={"Safe"} /></div>
+        <div className="shark_silhuette"><img src={sharkSilhouette} color={"#FFF"} text={"Small"}/></div>
+        <div className="shark_location"><img src={sharkLocation} color={"#FFF"} text={"Polar"}/></div>
+        <div className="shark_status"><img src={sharkStatus} color={"#FFF"} text={"Safe"} /></div>
         </div>
         <div id="fun_fact">
             <h2>A fun fact about this specific shark</h2>

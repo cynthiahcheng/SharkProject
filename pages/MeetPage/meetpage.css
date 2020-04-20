@@ -8,6 +8,7 @@ body, html {
      font-family: open sans;
      color:#ffff;
      align-items: center;
+     text-align: center;
  }
  
  #fun_fact{
@@ -34,15 +35,15 @@ body, html {
  #results{
     align-items: left;  
  }
-/*  
- .shark_shadows {
-     margin-top:15px;
-     margin-bottom:-8px;
-     cursor:pointer;
+
+ .shark_silhuette{
+     padding-bottom: 20px;
  }
- 
- .shark_sizes {
-     margin-top:-20px;
-     margin-bottom:5px;;
-     cursor:pointer;
- }  */
+
+ .shark_location{
+    padding-bottom: 20px;
+}
+
+.shark_status{
+    padding-bottom: 20px;
+}
