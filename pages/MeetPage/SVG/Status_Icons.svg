@@ -1,0 +1,11 @@
+<svg id="Status_Icons" xmlns="http://www.w3.org/2000/svg" width="151" height="40" viewBox="0 0 151 40">
+  <g id="Green">
+    <circle id="Green-2" data-name="Green" cx="20" cy="20" r="20" fill="#55c642"/>
+  </g>
+  <g id="Orange" transform="translate(55)" opacity="0.25">
+    <circle id="Orange-2" data-name="Orange" cx="20" cy="20" r="20" fill="#ff7f00"/>
+  </g>
+  <g id="Red" transform="translate(111)" opacity="0.25">
+    <circle id="Red-2" data-name="Red" cx="20" cy="20" r="20" fill="#ea0a0a"/>
+  </g>
+</svg>
