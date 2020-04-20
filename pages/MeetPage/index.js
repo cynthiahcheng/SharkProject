@@ -3,6 +3,8 @@ import './meetpage.css';
 import CustomButton from '../../comps/CustomButton';
 import Menu from '../../comps/Menu';
 
+// const sharksilhouette = require('./SVG/Shark_Silhouette.svg');
+
 const MeetPage = ({ }) => {
     const [color, setColor] = useState("#00D2AE");
 
@@ -13,6 +15,7 @@ const MeetPage = ({ }) => {
                 <h1>Meet the Shark!</h1> <br></br>
                 <h1>Shark Name</h1>
             </div>
+            {/* // insert shark shark_silhouette */}
             <div id="fun_fact">
                 <h2>A fun fact about this specific shark</h2>
             </div>
