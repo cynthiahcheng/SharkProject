@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+pages/GamePage/SVG/.DS_Store
+pages/GamePage/.DS_Store
+pages/.DS_Store
+.DS_Store
