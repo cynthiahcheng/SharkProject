@@ -1,16 +1,15 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
-import './tutpage.css';
-import CustomButton from '../../comps/CustomButton';
+import './index.css';
+import CustomButton from '../comps/CustomButton';
 
-const TutPage = ({}) => {
+const Index = () => {
     const [color, setColor] = useState("#00D2AE");
     const [tutcolor, setTutColor] = useState("#5A9DFF");
 
-    return <div className="tutorial_page">
-        <div className="tut_page_buttons">
-        <div id="home_button">
-            <Link href="/index"><CustomButton color={tutcolor} text={"HOME"} onClick={()=>{
+return <div className="title_page">
+    <div id="tutorial_button">
+            <Link href="/TutPage"><CustomButton color={tutcolor} text={"TUTORIAL"} onClick={()=>{
                 var new_color = "#999";
                 setTutColor(new_color);
                 }} /></Link>
@@ -21,14 +20,8 @@ const TutPage = ({}) => {
                 setColor(new_color);
                 }} /></Link>
         </div>
-        </div>
-    </div>
+
+</div>
 }
 
-
-
-TutPage.defaultProps = {
-
-}
-
-export default TutPage;
+export default Index;
