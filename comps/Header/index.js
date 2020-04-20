@@ -8,7 +8,7 @@ const Header = ({ text, fontSize, color }) => <div className="pick_your_shark">
 </div>
 
 Header.defaultProps = {
-    fontSize: "45pt",
+    fontSize: "45px",
     text: "1. Pick the size of your shark.",
     color: "#000"
 }

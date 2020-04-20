@@ -1,12 +1,14 @@
 import React from 'react';
 import './gamepage3.css';
 import Header from '../../comps/Header';
+import Menu from '../../comps/Menu';
 
 const Endangered = require('./SVG/Endangered.svg');
 const Safe = require('./SVG/Safe.svg');
 const Extinct = require('./SVG/Extinct.svg');
 
 const GamePage3 = ({endangered, safe, extinct}) => <div className="game_page3">
+<Menu />
 <Header color={"#FFF"} text={"3. How endangered is the shark?"}/>
 <div className="status_icons">
     <img id="safe_icon" src={safe} />

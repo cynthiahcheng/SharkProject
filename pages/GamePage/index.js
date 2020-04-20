@@ -1,12 +1,14 @@
 import React from 'react';
 import './gamepage.css';
 import Header from '../../comps/Header';
+import Menu from '../../comps/Menu';
 
 const smallShark = require('./SVG/Small_Shark.svg');
 const medShark = require('./SVG/Med_Shark.svg');
 const largeShark = require('./SVG/Large_Shark.svg');
 
 const GamePage = ({smallshark, medshark, largeshark}) => <div className="game_page">
+    <Menu />
     <Header color={"#FFF"} />
     <div className="shark_shadows">
         <img id="small_icon" src={smallshark} />

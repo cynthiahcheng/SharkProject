@@ -19,7 +19,7 @@ function ButtonClick(){
 CustomButton.defaultProps = {
     text:"Default",
     color:"#00D2AE",
-    fontsize:"50pt",
+    fontsize:"50px",
     onClick:ButtonClick
 }
 
