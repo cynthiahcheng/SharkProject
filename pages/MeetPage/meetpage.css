@@ -1,0 +1,49 @@
+body, html {
+    width:395px;
+ }
+
+
+ #headers{
+     font-size:40px;
+     font-family: open sans;
+     color:#ffff;
+     align-items: center;
+     text-align: center;
+ }
+ 
+ #fun_fact{
+     font-size: 25px;
+     font-family: open sans;
+     color:#ffff;
+     align-items: center;
+ }
+
+ #desc{
+    font-size: 20px;
+    font-family: open sans;
+     color:#ffff;
+     align-items: center;
+}
+
+ .meet_page {
+     padding:0px 10px 0px 10px;
+     display:flex;
+     flex-direction:column;
+     background-color:#0D1E4B;
+ }
+
+ #results{
+    align-items: left;  
+ }
+
+ .shark_silhuette{
+     padding-bottom: 20px;
+ }
+
+ .shark_location{
+    padding-bottom: 20px;
+}
+
+.shark_status{
+    padding-bottom: 20px;
+}
