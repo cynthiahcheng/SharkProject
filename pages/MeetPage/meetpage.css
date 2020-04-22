@@ -16,6 +16,7 @@ body, html {
      font-family: open sans;
      color:#ffff;
      align-items: center;
+     padding:10px;
  }
 
  #desc{
@@ -23,10 +24,10 @@ body, html {
     font-family: open sans;
      color:#ffff;
      align-items: center;
+     padding:10px;
 }
 
  .meet_page {
-     padding:0px 10px 0px 10px;
      display:flex;
      flex-direction:column;
      background-color:#0D1E4B;
@@ -34,16 +35,32 @@ body, html {
 
  #results{
     align-items: left;  
+    padding:10px;
  }
 
  .shark_silhuette{
      padding-bottom: 20px;
+     padding:10px;
+     display:inline-flex;
+     font-size:30px;
+     font-family: open sans;
+     color:#ffff;
  }
 
  .shark_location{
     padding-bottom: 20px;
+    padding:10px;
+    display:inline-flex;
+    font-size:30px;
+    font-family: open sans;
+    color:#ffff; 
 }
 
 .shark_status{
     padding-bottom: 20px;
+    padding:10px;
+    display:inline-flex;
+    font-size:30px;
+    font-family: open sans;
+    color:#ffff;
 }
