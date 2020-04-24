@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="210" viewBox="0 0 106 210">
+  <g id="Group_23" data-name="Group 23" transform="translate(-316 -419)">
+    <g id="Rectangle_44" data-name="Rectangle 44" transform="translate(316 419)" fill="#0d1e4b" stroke="#707070" stroke-width="1">
+      <rect width="106" height="210" stroke="none"/>
+      <rect x="0.5" y="0.5" width="105" height="209" fill="none"/>
+    </g>
+    <text id="safe" transform="translate(370 524)" fill="#fff" font-size="12" font-family="Sniglet-Regular, Sniglet"><tspan x="-11.178" y="0">safe</tspan></text>
+    <text id="endangered" transform="translate(364 566)" fill="#fff" font-size="10" font-family="Sniglet-Regular, Sniglet"><tspan x="-26.775" y="0">endangered</tspan></text>
+    <text id="extinct" transform="translate(369 611)" fill="#fff" font-size="12" font-family="Sniglet-Regular, Sniglet"><tspan x="-18.69" y="0">extinct</tspan></text>
+    <g id="Red" transform="translate(357 573)">
+      <circle id="Red-2" data-name="Red" cx="12.5" cy="12.5" r="12.5" fill="#ea0a0a"/>
+    </g>
+    <g id="Orange" transform="translate(357 529)">
+      <circle id="Orange-2" data-name="Orange" cx="12.5" cy="12.5" r="12.5" fill="#ff7f00"/>
+    </g>
+    <g id="Green" transform="translate(357 488)">
+      <circle id="Green-2" data-name="Green" cx="12.5" cy="12.5" r="12.5" fill="#55c642"/>
+    </g>
+    <text id="_3" data-name="3" transform="translate(339 469)" fill="#fff" font-size="52" font-family="Sniglet-Regular, Sniglet"><tspan x="-15.184" y="0">3</tspan></text>
+  </g>
+</svg>
