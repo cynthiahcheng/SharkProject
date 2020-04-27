@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Link from 'next/link';
 import './menu.css';
 import Header from '../Header';
 
@@ -7,25 +8,34 @@ const sharkImg = require('./SVG/Shark_Logo.svg');
 const hamImg = require('./SVG/Hamburger_Menu.svg');
 
 
-const Menu = ({backimg, sharkimg, hamimg, onClick}) => <div className='menu'>
+const Menu = ({backimg, sharkimg, hamimg, onClick, props, ref}) => <div className='menu'>
         <div className="menu_closed">
             <div className='back_icon'>
                 <img id="back_icon_inner" className="icons" src={backimg} />
             </div>
             <div className="shark_icon">
-                <img id="shark_icon_inner" className="icons" src={sharkimg} />
+                <Link href="/index"><img id="shark_icon_inner" className="icons" src={sharkimg} /></Link>
             </div>
             <div className="ham_icon">
                 <img id="ham_icon_inner" className="icons" src={hamimg} onClick={onClick}/>
             </div>
         </div>
             <div className="menu_items">
-                    <div className="menu_items_inner"><Header fontSize="50px" color={"#FFF"} text={"Home"}/></div>
-                    <div className="menu_items_inner"><Header fontSize="50px" color={"#FFF"} text={"Game"}/></div>
-                    <div className="menu_items_inner"><Header fontSize="50px" color={"#FFF"} text={"About"}/></div>
-                    <div className="menu_items_inner"><Header fontSize="50px" color={"#FFF"} text={"How to Help"}/></div>
+                    <div className="menu_items_inner">
+                        <a href="/index"><Header ref={ref} className="Home" fontSize="50px" color={"#FFF"} text={"Home"} /></a>
+                    </div>
+                    <div className="menu_items_inner">
+                        <a href="/GamePage"><Header fontSize="50px" color={"#FFF"} text={"Game"}/></a>
+                    </div>
+                    <div className="menu_items_inner">
+                        <a href="/AboutPage"><Header fontSize="50px" color={"#FFF"} text={"About"}/></a>
+                    </div>
+                    <div className="menu_items_inner">
+                        <a href="/HelpPage"><Header fontSize="50px" color={"#FFF"} text={"How to Help"}/></a>
+                    </div>
             </div>
 </div>
+
 
 var menu_state = true;
 

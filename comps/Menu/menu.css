@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+body {
+    text-decoration:none;
+}
+
 .menu {
     margin-top:-3px;;
 }
@@ -43,9 +47,14 @@
     padding:25px;
     opacity:0%;
     transition: 0.25s;
+    cursor: pointer;
 }
 
 .menu_items_inner {
     margin-bottom:-30px;
     margin-top:-30px;
+}
+
+a {
+    text-decoration: none;
 }
