@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import './meetpage.css';
 import CustomButton from '../../comps/CustomButton';
 import Menu from '../../comps/Menu';
@@ -30,10 +31,10 @@ const MeetPage = ({ }) => {
             <p>This shark lives in the tropics and usually lives to 500 years old. Vivamus orci dolor, porta vel velit et, bibendum sollicitudin mauris. Donec blandit, massa id malesua eleifend, nulla arcu lacinia metus. Sharks are an endangered species. Vivamus orci dolor, porta vel velit et, bibendum sollicitudin mauris. Donec blandit, massa id malesua eleifend, nulla arc.</p>
         </div>
         <div id="help_button">
-            <CustomButton color={color} text={"HOW YOU CAN HELP"} fontsize={"30pt"} onClick={() => {
+            <Link href="/HelpPage"><CustomButton color={color} text={"HOW YOU CAN HELP"} fontsize={"30pt"} onClick={() => {
                 var new_color = "#999";
                 setColor(new_color);
-            }} />
+            }} /></Link>
         </div>
         </div>
 }
