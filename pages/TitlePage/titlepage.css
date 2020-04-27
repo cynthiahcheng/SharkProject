@@ -1,5 +1,37 @@
 .title_page {
+        background-color:#0D1E4B;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        padding-bottom:30px;
+}
+
+.sub_header_text {
+    font-family:'open-sans', sans-serif;
+    font-size: 30px;
+    color:#FFF;
+    text-align: center;
+    margin-top:20px;
+    margin-left:40px;
+    margin-right:40px;
+    margin-bottom:25px;
+}
+
+.tut_header_box {
+    margin-bottom:30px;
+    align-items:center;
     display:flex;
-    flex-direction:column;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom:10px;
+}
+
+.tut_header {
+    font-size:50px;
+    font-family:sniglet;
+    color:#CFEAFF;
+    line-height:1.1;
+}
+
+.logo {
+    margin-top:35px;
 }
