@@ -5,17 +5,16 @@ body {
 }
 
 .menu {
-    margin-top:-3px;;
+    margin-top:-3px;
+    width:100%;
 }
 
 .menu_closed {
     background-color: #1E4DCB;
     height: 88px;
-    width: 395px;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     display:inline-flex;
-    /* padding-top:10px;
-    padding-bottom:10px; */
 }
 
 .back_icon {
@@ -48,14 +47,14 @@ body {
     background-color:#1E4DCB;
     align-items: center;
     padding:25px;
-    opacity:0%;
-    transition: 0.25s;
     cursor: pointer;
 }
 
 .menu_items_inner {
     margin-bottom:-30px;
     margin-top:-30px;
+    opacity:100%;
+    transition:opacity 0.5s ease-in;
 }
 
 a {

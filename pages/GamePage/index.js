@@ -12,21 +12,28 @@ const backBtn = require('./SVG/back_btn.svg');
 const GamePage = ({smallshark, medshark, largeshark, backbtn}) => <div className="game_page">
     <Menu />
     <Link href="/index"><div id="back_btn"><img src={backbtn} /></div></Link>
-    <Header color={"#FFF"} />
-    <div className="shark_shadows">
-        <Link href="/GamePage2"><img id="small_icon" src={smallshark} /></Link>
-    </div>
-    <div className="shark_sizes"><Header color={"#FFF"} text={"small"} /></div>
+    <div id="pick_shark"><Header color={"#FFF"} /></div>
+    
+    <Link href="/GamePage2"><div className="size">
+        <div className="shark_shadows">
+            <img id="small_icon" src={smallshark} />
+        </div>
+        <div className="shark_sizes"><Header color={"#FFF"} text={"small"} /></div>
+    </div></Link>
 
-    <div className="shark_shadows">
-        <Link href="/GamePage2"><img id="med_icon" src={medshark} /></Link>
-    </div>
-    <div className="shark_sizes"><Header color={"#FFF"} text={"medium"} /></div>
+    <Link href="/GamePage2"><div className="size">
+        <div className="shark_shadows">
+            <img id="med_icon" src={medshark} />
+        </div>
+        <div className="shark_sizes"><Header color={"#FFF"} text={"medium"} /></div>
+    </div></Link>
 
-    <div className="shark_shadows">
-        <Link href="/GamePage2"><img id="large_icon" src={largeshark} /></Link>
-    </div>
-    <div className="shark_sizes"><Header color={"#FFF"} text={"large"} /></div>
+    <Link href="/GamePage2"><div className="size">
+        <div className="shark_shadows">
+            <img id="large_icon" src={largeshark} />
+        </div>
+        <div className="shark_sizes"><Header color={"#FFF"} text={"large"} /></div>
+    </div></Link>
     </div>
 
 GamePage.defaultProps = {

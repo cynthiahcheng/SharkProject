@@ -1,5 +1,5 @@
 body, html {
-    width:395px;
+    width:100%;
  }
 
  #back_btn {
@@ -16,21 +16,24 @@ body, html {
 
  #shark_name {
      position:relative;
-     bottom:20px
+     bottom:15px
  }
 
  .shark_result {
-     position:absolute;
-     top:235px;
-     left:120px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+ }
 
+ #shark_result_img {
+     background-color:#FFF;
+     padding: 30px 50px 30px 50px;
+     border-radius:15px;
  }
  
  #fun_fact{
-     font-size: 25px;
-     font-family: open sans;
-     color:#ffff;
-     align-items: center;
+    display:flex;
+    justify-content: center;
  }
 
  #desc{
@@ -56,10 +59,12 @@ body, html {
  #sections {
      display:flex;
      flex-direction:column;
+     justify-content: center;
+     align-items: center;
  }
 
  .shark_section{
-     padding-left:30px;
+     /* padding-left:30px; */
      display:inline-flex;
  }
 
@@ -76,17 +81,19 @@ body, html {
  }
 
  .shark_location{
-    padding-left:30px;
+    /* padding-left:30px; */
     display:inline-flex;
 }
 
 .shark_status{
     padding-bottom: 25px;
-    margin-left:18px;
+    margin-left:-18px;
     display:inline-flex;
 }
 
 #help_button {
     padding-bottom:30px;
     padding-top:30px;
+    display:flex;
+    justify-content: center;
 }

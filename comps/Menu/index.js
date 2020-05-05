@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import './menu.css';
 import Header from '../Header';
@@ -36,7 +36,6 @@ const Menu = ({backimg, sharkimg, hamimg, onClick, props, ref}) => <div classNam
             </div>
 </div>
 
-
 var menu_state = true;
 
 function HamburgerClick(){
@@ -49,6 +48,12 @@ function HamburgerClick(){
         document.querySelector(".menu_items").style.display = "none";
         menu_state = true;
     }
+
+//     useEffect(()=>{
+//         setTimeout(()=>{
+//             document.querySelector(".menu_items").style.opacity="0.100%";
+//         }, 50);
+//         }, []);
 }
 
     Menu.defaultProps = {

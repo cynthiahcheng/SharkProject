@@ -5,7 +5,7 @@ import CustomButton from '../../comps/CustomButton';
 import Menu from '../../comps/Menu';
 import Header from '../../comps/Header';
 
-const sharkRectangle = require('./SVG/Rectangle.svg');
+// const sharkRectangle = require('./SVG/Rectangle.svg');
 const sharkSilhouette = require('./SVG/Shark_Silhouette.svg');
 const sharkLocation = require('./SVG/Snowflake.svg');
 const sharkStatus = require('./SVG/Status_Icons.svg');
@@ -15,7 +15,7 @@ const extinctStatus = require('./SVG/extinct.svg');
 const sharkResult = require('./SVG/sharky1.svg');
 const backBtn = require('./SVG/back_btn.svg');
 
-const MeetPage = ({sharkrectangle, sharksilhouette, sharklocation,sharkstatus,safestatus, endangeredstatus, extinctstatus, sharkresult, backbtn}) => {
+const MeetPage = ({sharksilhouette, sharklocation,sharkstatus,safestatus, endangeredstatus, extinctstatus, sharkresult, backbtn}) => {
     const [color, setColor] = useState("#00D2AE");
 
     return <div className="meet_page">
@@ -23,8 +23,8 @@ const MeetPage = ({sharkrectangle, sharksilhouette, sharklocation,sharkstatus,sa
         <Link href="/GamePage3"><div id="back_btn"><img src={backbtn} /></div></Link>
         <div id="headers">
             <Header text={"Meet Your Shark!"} fontSize={"40px"} color={"#FFF"}/>
-            <div className="shark_result"><img src={sharkresult} /></div>
-            <div className="shark_rectangle"><img src={sharkrectangle} /></div>
+            <div className="shark_result"><img id="shark_result_img" src={sharkresult} /></div>
+            {/* <div className="shark_rectangle"><img src={sharkrectangle} /></div> */}
             <div id="shark_name"><Header text={"Shark Name"} fontSize={"40px"} color={"#FFF"}/></div>
         </div>
 
@@ -61,7 +61,7 @@ const MeetPage = ({sharkrectangle, sharksilhouette, sharklocation,sharkstatus,sa
 }
 
 MeetPage.defaultProps = {
-    sharkrectangle:sharkRectangle,
+    // sharkrectangle:sharkRectangle,
     sharksilhouette:sharkSilhouette,
     sharklocation:sharkLocation,
     sharkstatus:sharkStatus,

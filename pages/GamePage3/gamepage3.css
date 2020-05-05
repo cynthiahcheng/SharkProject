@@ -1,5 +1,5 @@
 body, html {
-    width:395px;
+    width:100%;
     margin:0;
     padding:0;
  }
@@ -11,13 +11,25 @@ body, html {
 }
  
  .game_page3 {
-     padding:0px 10px 0px 10px;
      display:flex;
+     padding-bottom:50px;
      flex-direction:column;
      align-items: center;
      background-color:#0D1E4B;
  }
  
+ #how_endangered {
+     margin-left:20px;
+     margin-right:20px;
+ }
+
+.status {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
  .status_icons {
      margin-top:15px;
      margin-bottom:-8px;
