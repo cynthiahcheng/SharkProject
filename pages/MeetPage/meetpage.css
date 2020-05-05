@@ -2,13 +2,28 @@ body, html {
     width:395px;
  }
 
+ #back_btn {
+     position:absolute;
+     top:6px;
+     left:10px;
+ }
 
  #headers{
-     font-size:40px;
-     font-family: open sans;
-     color:#ffff;
+     margin-top:30px;
      align-items: center;
      text-align: center;
+ }
+
+ #shark_name {
+     position:relative;
+     bottom:20px
+ }
+
+ .shark_result {
+     position:absolute;
+     top:235px;
+     left:120px;
+
  }
  
  #fun_fact{
@@ -16,15 +31,15 @@ body, html {
      font-family: open sans;
      color:#ffff;
      align-items: center;
-     padding:10px;
  }
 
  #desc{
     font-size: 20px;
-    font-family: open sans;
+    font-family: open sans ;
      color:#ffff;
      align-items: center;
-     padding:10px;
+     padding-left:40px;
+     padding-right:40px;
 }
 
  .meet_page {
@@ -38,29 +53,40 @@ body, html {
     padding:10px;
  }
 
- .shark_silhuette{
-     padding-bottom: 20px;
-     padding:10px;
+ #sections {
+     display:flex;
+     flex-direction:column;
+ }
+
+ .shark_section{
+     padding-left:30px;
      display:inline-flex;
-     font-size:30px;
-     font-family: open sans;
-     color:#ffff;
+ }
+
+ #shark_size {
+     margin-right:30px;
+ }
+
+ #location {
+     margin-right:45px;
+ }
+
+ #status {
+     margin-right:30px;
  }
 
  .shark_location{
-    padding-bottom: 20px;
-    padding:10px;
+    padding-left:30px;
     display:inline-flex;
-    font-size:30px;
-    font-family: open sans;
-    color:#ffff; 
 }
 
 .shark_status{
-    padding-bottom: 20px;
-    padding:10px;
+    padding-bottom: 25px;
+    margin-left:18px;
     display:inline-flex;
-    font-size:30px;
-    font-family: open sans;
-    color:#ffff;
+}
+
+#help_button {
+    padding-bottom:30px;
+    padding-top:30px;
 }
