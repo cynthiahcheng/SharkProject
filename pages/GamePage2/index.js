@@ -7,9 +7,11 @@ import Menu from '../../comps/Menu';
 const Polar = require('./SVG/Polar.png');
 const Temperate = require('./SVG/Temperate.png');
 const Tropical = require('./SVG/Tropical.png');
+const backBtn = require('./SVG/back_btn.svg');
 
-const GamePage2 = ({tropical, temperate, polar}) => <div className="game_page2">
+const GamePage2 = ({tropical, temperate, polar, backbtn}) => <div className="game_page2">
 <Menu />
+<Link href="/GamePage"><div id="back_btn"><img src={backbtn} /></div></Link>
 <Header color={"#FFF"} text={"2. Pick the location."}/>
 <div className="location_icons">
     <Link href="/GamePage3"><img id="tropical_icon" src={tropical} /></Link>
@@ -31,7 +33,8 @@ const GamePage2 = ({tropical, temperate, polar}) => <div className="game_page2">
 GamePage2.defaultProps = {
     tropical:Tropical,
     temperate:Temperate,
-    polar:Polar
+    polar:Polar,
+    backbtn:backBtn
 }
 
 export default GamePage2;

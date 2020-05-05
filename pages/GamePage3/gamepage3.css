@@ -1,6 +1,14 @@
 body, html {
     width:395px;
+    margin:0;
+    padding:0;
  }
+
+ #back_btn {
+    position:absolute;
+    top:6px;
+    left:10px;
+}
  
  .game_page3 {
      padding:0px 10px 0px 10px;

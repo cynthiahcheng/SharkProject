@@ -7,9 +7,11 @@ import Menu from '../../comps/Menu';
 const Endangered = require('./SVG/Endangered.svg');
 const Safe = require('./SVG/Safe.svg');
 const Extinct = require('./SVG/Extinct.svg');
+const backBtn = require('./SVG/back_btn.svg');
 
-const GamePage3 = ({endangered, safe, extinct}) => <div className="game_page3">
+const GamePage3 = ({endangered, safe, extinct, backbtn}) => <div className="game_page3">
 <Menu />
+<Link href="/GamePage2"><div id="back_btn"><img src={backbtn} /></div></Link>
 <Header color={"#FFF"} text={"3. How endangered is the shark?"}/>
 <div className="status_icons">
     <Link href="/MeetPage"><img id="safe_icon" src={safe} /></Link>
@@ -31,7 +33,8 @@ const GamePage3 = ({endangered, safe, extinct}) => <div className="game_page3">
 GamePage3.defaultProps = {
     safe:Safe,
     endangered:Endangered,
-    extinct:Extinct
+    extinct:Extinct,
+    backbtn:backBtn
 }
 
 export default GamePage3;
