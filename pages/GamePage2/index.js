@@ -12,21 +12,28 @@ const backBtn = require('./SVG/back_btn.svg');
 const GamePage2 = ({tropical, temperate, polar, backbtn}) => <div className="game_page2">
 <Menu />
 <Link href="/GamePage"><div id="back_btn"><img src={backbtn} /></div></Link>
-<Header color={"#FFF"} text={"2. Pick the location."}/>
-<div className="location_icons">
-    <Link href="/GamePage3"><img id="tropical_icon" src={tropical} /></Link>
-</div>
-<div className="location_title"><Header color={"#FFF"} text={"tropical"} /></div>
+<div id="pick_location"><Header color={"#FFF"} text={"2. Pick the location."}/></div>
 
-<div className="location_icons">
-    <Link href="/GamePage3"><img id="temperate_icon" src={temperate} /></Link>
-</div>
-<div className="location_title"><Header color={"#FFF"} text={"temperate"} /></div>
+<Link href="/GamePage3"><div className="location">
+    <div className="location_icons">
+        <img id="tropical_icon" src={tropical} />
+    </div>
+    <div className="location_title"><Header color={"#FFF"} text={"tropical"} /></div>
+</div></Link>
 
-<div className="location_icons">
-    <Link href="/GamePage3"><img id="polar_icon" src={polar} /></Link>
-</div>
-<div className="location_title"><Header color={"#FFF"} text={"polar"} /></div>
+<Link href="/GamePage3"><div className="location">
+    <div className="location_icons">
+        <img id="temperate_icon" src={temperate} />
+    </div>
+    <div className="location_title"><Header color={"#FFF"} text={"temperate"} /></div>
+</div></Link>
+
+<Link href="/GamePage3"><div className="location">
+    <div className="location_icons">
+        <img id="polar_icon" src={polar} />
+    </div>
+    <div className="location_title"><Header color={"#FFF"} text={"polar"} /></div>
+</div></Link>
 
 </div>
 

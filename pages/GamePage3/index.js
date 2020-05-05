@@ -12,21 +12,28 @@ const backBtn = require('./SVG/back_btn.svg');
 const GamePage3 = ({endangered, safe, extinct, backbtn}) => <div className="game_page3">
 <Menu />
 <Link href="/GamePage2"><div id="back_btn"><img src={backbtn} /></div></Link>
-<Header color={"#FFF"} text={"3. How endangered is the shark?"}/>
-<div className="status_icons">
-    <Link href="/MeetPage"><img id="safe_icon" src={safe} /></Link>
-</div>
-<div className="status_title"><Header color={"#FFF"} text={"safe"} /></div>
+<div id="how_endangered"><Header color={"#FFF"} text={"3. How endangered is the shark?"}/></div>
 
-<div className="status_icons">
-    <Link href="/MeetPage"><img id="endangered_icon" src={endangered} /></Link>
-</div>
-<div className="status_title"><Header color={"#FFF"} text={"endangered"} /></div>
+<Link href="/MeetPage"><div className="status">
+    <div className="status_icons">
+        <Link href="/MeetPage"><img id="safe_icon" src={safe} /></Link>
+    </div>
+    <div className="status_title"><Header color={"#FFF"} text={"safe"} /></div>
+</div></Link>
 
-<div className="status_icons">
-    <Link href="/MeetPage"><img id="extinct_icon" src={extinct} /></Link>
-</div>
-<div className="status_title"><Header color={"#FFF"} text={"extinct"} /></div>>
+<Link href="/MeetPage"><div className="status">
+    <div className="status_icons">
+        <img id="endangered_icon" src={endangered} />
+    </div>
+    <div className="status_title"><Header color={"#FFF"} text={"endangered"} /></div>
+</div></Link>
+
+<Link href="/MeetPage"><div className="status">
+    <div className="status_icons">
+        <Link href="/MeetPage"><img id="extinct_icon" src={extinct} /></Link>
+    </div>
+    <div className="status_title"><Header color={"#FFF"} text={"extinct"} /></div>
+</div></Link>
 
 </div>
 
