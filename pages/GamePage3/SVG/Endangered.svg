@@ -1,3 +1,14 @@
-<svg id="Endangered" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
-  <circle id="Orange" cx="45" cy="45" r="45" fill="#ff7f00"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="135" viewBox="0 0 135 135">
+  <defs>
+    <filter id="Orange" x="0" y="0" width="135" height="135" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#ff7f00"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Orange)">
+    <circle id="Orange-2" data-name="Orange" cx="45" cy="45" r="45" transform="translate(22.5 22.5)" fill="#ff7f00"/>
+  </g>
 </svg>

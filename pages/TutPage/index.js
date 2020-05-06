@@ -3,6 +3,10 @@ import Link from 'next/link';
 import './tutpage.css';
 import CustomButton from '../../comps/CustomButton';
 
+import {data, ChangeData} from '../data';
+
+console.log(data);
+
 const Logo = require('./SVG/Logo_Shark.svg');
 const PageOne = require('./SVG/page_1.svg');
 const PageTwo = require('./SVG/page_two.svg');
@@ -22,31 +26,36 @@ const TutPage = ({logo, page_one, page_two, page_three,page_four}) => {
             <div className="tut_header" id="shark">Shark</div>
         </div>
         <div className="sub_header_text">
-            Pick one option on each screen to learn about a shark!
+            Select one option on each screen. According to the options you picked, 
+            an awesome shark will show up at the end where you can learn some fun facts about the shark!
         </div>
 
+    <div id="gamepages_box">
         <div className="gamepages">
             <img id="page_1" src={page_one} />
-            <div className="body_text">On page 1, pick how big or small the shark is.</div>
+            <div className="body_text"><strong>Page 1:</strong> pick a size.</div>
         </div>
 
         <div className="gamepages">
             <div><img id="page_2" src={page_two} /></div>
-            <div className="body_text">On page 2, pick where the shark lives.</div>
+            <div className="body_text"><strong>Page 2:</strong> pick a location.</div>
         </div>
 
         <div className="gamepages">
             <img id="page_3" src={page_three} />
-            <div className="body_text">On page 3, pick the endangered status of the shark.</div>
+            <div className="body_text"><strong>Page 3:</strong> pick an endangered status.</div>
         </div>
 
         <div className="gamepages">
             <img id="page_4" src={page_four} />
-            <div className="body_text">The last page will reveal the shark you picked.</div>
+            <div className="body_text"><strong>Page 4:</strong> The result will show you a shark that applies to the
+            3 categories you picked.
+            </div>
         </div>
+    </div>
 
         <div className="sub_header_text">
-            You can always try again to see a new shark!
+            You can play again to see a different shark!
         </div>
 
         <div className="tut_page_buttons">

@@ -5,17 +5,29 @@ import CustomButton from '../../comps/CustomButton';
 import Menu from '../../comps/Menu';
 import Header from '../../comps/Header';
 
-// const sharkRectangle = require('./SVG/Rectangle.svg');
-const sharkSilhouette = require('./SVG/Shark_Silhouette.svg');
-const sharkLocation = require('./SVG/Snowflake.svg');
-const sharkStatus = require('./SVG/Status_Icons.svg');
+import {data, ChangeData} from '../data';
+console.log(data);
+
+const backBtn = require('./SVG/back_btn.svg');
+
+const sharkSize = require('./SVG/Small_Shark.svg');
+
+const sharkLocation1 = require('./SVG/Tropical.svg');
+const sharkLocation2 = require('./SVG/Temperate.svg');
+const sharkLocation3 = require('./SVG/Polar.svg');
+
 const safeStatus = require('./SVG/safe.svg');
 const endangeredStatus = require('./SVG/endangered.svg');
 const extinctStatus = require('./SVG/extinct.svg');
-const sharkResult = require('./SVG/sharky1.svg');
-const backBtn = require('./SVG/back_btn.svg');
 
-const MeetPage = ({sharksilhouette, sharklocation,sharkstatus,safestatus, endangeredstatus, extinctstatus, sharkresult, backbtn}) => {
+const sharkResult1 = require('./SVG/sharky1.svg');
+const sharkResult2 = require('./SVG/sharky2.svg');
+const sharkResult3 = require('./SVG/sharky3.svg');
+
+const MeetPage = ({backbtn, sharksize, 
+    sharklocation1, sharklocation2, sharklocation3,
+    safestatus, endangeredstatus, extinctstatus, 
+    sharkresult1, sharkresult2, sharkresult3}) => {
     const [color, setColor] = useState("#00D2AE");
 
     return <div className="meet_page">
@@ -23,24 +35,35 @@ const MeetPage = ({sharksilhouette, sharklocation,sharkstatus,safestatus, endang
         <Link href="/GamePage3"><div id="back_btn"><img src={backbtn} /></div></Link>
         <div id="headers">
             <Header text={"Meet Your Shark!"} fontSize={"40px"} color={"#FFF"}/>
-            <div className="shark_result"><img id="shark_result_img" src={sharkresult} /></div>
-            {/* <div className="shark_rectangle"><img src={sharkrectangle} /></div> */}
+            <div className="shark_result"><img id="shark_result_img" src={sharkresult1} /></div>
             <div id="shark_name"><Header text={"Shark Name"} fontSize={"40px"} color={"#FFF"}/></div>
         </div>
 
         <div id="results">
-            <div id="sections">
+            {/* <div id="sections">
                 <div className="shark_section">
-                    <img id="shark_size" src={sharksilhouette} />
+                    <img id="shark_size" src={sharksize} width={"85px"} />
                     <Header text={"Small"} fontSize={"30px"} color={"#FFF"}/>
                 </div>
                 <div className="shark_location">
-                    <img id="location" src={sharklocation} />
+                    <img id="location" src={sharklocation1} width={"85px"} />
                     <Header text={"Polar"} fontSize={"30px"} color={"#FFF"}/>
                 </div>
                 <div className="shark_status">
                     <img id="status" src={safestatus} width={"85px"} />
                     <Header text={"Safe"} fontSize={"30px"} color={"#FFF"}/>
+                </div>
+            </div> */}
+            <div id="sections">
+                <div className="sections_inner">
+                    <div className="sections_img"><img id="shark_size" src={sharksize} width={"85px"} /></div>
+                    <div className="sections_img"><img id="location" src={sharklocation3} width={"85px"} /></div>
+                    <div className="sections_img"><img id="status" src={safestatus} width={"85px"} /></div>
+                </div>
+                <div className="sections_inner">
+                    <div className="sections_text" id="size_text"><Header text={"Small"} fontSize={"30px"} color={"#FFF"}/></div>
+                    <div className="sections_text" id="location_text"><Header text={"Polar"} fontSize={"30px"} color={"#FFF"}/></div>
+                    <div className="sections_text" id="status_text"><Header text={"Safe"} fontSize={"30px"} color={"#FFF"}/></div>
                 </div>
             </div>
 
@@ -61,15 +84,20 @@ const MeetPage = ({sharksilhouette, sharklocation,sharkstatus,safestatus, endang
 }
 
 MeetPage.defaultProps = {
-    // sharkrectangle:sharkRectangle,
-    sharksilhouette:sharkSilhouette,
-    sharklocation:sharkLocation,
-    sharkstatus:sharkStatus,
+    backbtn:backBtn,
+    sharksize:sharkSize,
+
+    sharklocation1:sharkLocation1,
+    sharklocation2:sharkLocation2,
+    sharklocation3:sharkLocation3,
+    
     safestatus:safeStatus,
     endangeredstatus:endangeredStatus,
     extinctstatus:extinctStatus,
-    sharkresult:sharkResult,
-    backbtn:backBtn,
+    
+    sharkresult1:sharkResult1,
+    sharkresult2:sharkResult2,
+    sharkresult3:sharkResult3,
 }
 
 export default MeetPage;
