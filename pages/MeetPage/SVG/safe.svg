@@ -1,14 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="135" viewBox="0 0 135 135">
   <defs>
-    <filter id="Ellipse_42" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse">
+    <filter id="Green" x="0" y="0" width="135" height="135" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-color="#55c642" flood-opacity="0.624"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#55c642"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_42)">
-    <circle id="Ellipse_42-2" data-name="Ellipse 42" cx="11.5" cy="11.5" r="11.5" transform="translate(9 9)" fill="#55c642"/>
+  <g id="Safe" transform="translate(22.5 22.5)">
+    <g transform="matrix(1, 0, 0, 1, -22.5, -22.5)" filter="url(#Green)">
+      <circle id="Green-2" data-name="Green" cx="45" cy="45" r="45" transform="translate(22.5 22.5)" fill="#55c642"/>
+    </g>
   </g>
 </svg>
