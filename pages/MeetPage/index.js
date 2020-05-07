@@ -63,10 +63,10 @@ const MeetPage = ({backbtn, sharksize,
     const [healthtext, setHealthText] = useState("safe");
 
     useEffect(()=>{
-        document.querySelector("#shark_result_img").style.transition="all 0.75s";
+        document.querySelector("#shark_result_img").style.transition="1.5s ease-out";
         setTimeout(()=>{
         document.querySelector("#shark_result_img").style.opacity="100%";
-        }, 200);
+        }, 300);
     }, []);
 
     return <div className="meet_page"> 

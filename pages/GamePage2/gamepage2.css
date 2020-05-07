@@ -12,6 +12,8 @@ body, html {
 #pick_location {
     margin-left:10px;
     margin-right:10px;
+    position:relative;
+    left:100%;
 }
 
 .location {
@@ -39,4 +41,8 @@ body, html {
      margin-top:-20px;
      margin-bottom:5px;;
      cursor:pointer;
+ }
+
+ #tropical_icon, #temperate_icon, #polar_icon {
+     opacity:0;
  }

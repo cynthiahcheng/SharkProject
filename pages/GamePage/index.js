@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import './gamepage.css';
 import Header from '../../comps/Header';
@@ -14,17 +14,36 @@ const largeShark = require('./SVG/Large_Shark.svg');
 const backBtn = require('./SVG/back_btn.svg');
 
 
-const GamePage = ({smallshark, medshark, largeshark, backbtn}) => <div className="game_page">
+const GamePage = ({smallshark, medshark, largeshark, backbtn}) => {
+
+    useEffect(()=>{
+        document.querySelector("#small_icon").style.transition="opacity 1s";
+        document.querySelector("#med_icon").style.transition="opacity 1.5s";
+        document.querySelector("#large_icon").style.transition="opacity 2s";
+        document.querySelector("#pick_shark").style.transition="0.75s ease-out";
+        setTimeout(()=>{
+        document.querySelector("#small_icon").style.opacity="100%";
+        document.querySelector("#med_icon").style.opacity="100%";
+        document.querySelector("#large_icon").style.opacity="100%";
+        document.querySelector("#pick_shark").style.left="0";
+        }, 100);
+    }, []);
+
+return <div className="game_page">
     <Menu />
     <Link href="/index"><div id="back_btn"><img src={backbtn} /></div></Link>
-    <div id="pick_shark"><Header color={"#FFF"} /></div>
+    <div id="pick_shark"><Header color={"#FFF"} text={"1. Pick the size of your shark."} /></div>
     
     <div className="size" onClick={()=>{
         data.size = "small";
         ChangeData(data);
         Router.push("/GamePage2");
+    }} onMouseEnter={()=>{
+        document.querySelector("#small_icon").style.width = "120px";
+    }} onMouseLeave={()=>{
+        document.querySelector("#small_icon").style.width = "100px";
     }}>
-        <div className="shark_shadows">
+        <div className="shark_shadows" >
             <img id="small_icon" src={smallshark} />
         </div>
         <div className="shark_sizes"><Header color={"#FFF"} text={"small"} /></div>
@@ -34,6 +53,10 @@ const GamePage = ({smallshark, medshark, largeshark, backbtn}) => <div className
         data.size = "medium";
         ChangeData(data);
         Router.push("/GamePage2");
+    }} onMouseEnter={()=>{
+        document.querySelector("#med_icon").style.width = "215px";
+    }} onMouseLeave={()=>{
+        document.querySelector("#med_icon").style.width = "195px";
     }}>
         <div className="shark_shadows">
             <img id="med_icon" src={medshark} />
@@ -45,6 +68,10 @@ const GamePage = ({smallshark, medshark, largeshark, backbtn}) => <div className
         data.size = "large";
         ChangeData(data);
         Router.push("/GamePage2");
+    }} onMouseEnter={()=>{
+        document.querySelector("#large_icon").style.width = "290px";
+    }} onMouseLeave={()=>{
+        document.querySelector("#large_icon").style.width = "270px";
     }}>
         <div className="shark_shadows">
             <img id="large_icon" src={largeshark} />
@@ -52,6 +79,8 @@ const GamePage = ({smallshark, medshark, largeshark, backbtn}) => <div className
         <div className="shark_sizes"><Header color={"#FFF"} text={"large"} /></div>
     </div>
     </div>
+
+}
 
 GamePage.defaultProps = {
     smallshark:smallShark,

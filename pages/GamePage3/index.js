@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Link from 'next/link';
 import './gamepage3.css';
 import Header from '../../comps/Header';
@@ -14,7 +14,23 @@ const Safe = require('./SVG/Safe.png');
 const Extinct = require('./SVG/Extinct.png');
 const backBtn = require('./SVG/back_btn.svg');
 
-const GamePage3 = ({endangered, safe, extinct, backbtn}) => <div className="game_page3">
+const GamePage3 = ({endangered, safe, extinct, backbtn}) => {
+
+    useEffect(()=>{
+        document.querySelector("#how_endangered").style.transition="1s";
+        document.querySelector("#safe_icon").style.transition="1.5s";
+        document.querySelector("#endangered_icon").style.transition="2s";
+        document.querySelector("#extinct_icon").style.transition="0.5s ease-out";
+        setTimeout(()=>{
+        document.querySelector("#how_endangered").style.left="0";
+        document.querySelector("#safe_icon").style.opacity="100%";
+        document.querySelector("#endangered_icon").style.opacity="100%";
+        document.querySelector("#extinct_icon").style.opacity="100%";
+        }, 100);
+    }, []);
+
+
+return <div className="game_page3">
 <Menu />
 <Link href="/GamePage2"><div id="back_btn"><img src={backbtn} /></div></Link>
 <div id="how_endangered"><Header color={"#FFF"} text={"3. How endangered is the shark?"}/></div>
@@ -53,6 +69,7 @@ const GamePage3 = ({endangered, safe, extinct, backbtn}) => <div className="game
 </div>
 
 </div>
+}
 
 GamePage3.defaultProps = {
     safe:Safe,

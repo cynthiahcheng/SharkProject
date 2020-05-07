@@ -8,34 +8,38 @@ const sharkImg = require('./SVG/Shark_Logo.svg');
 const hamImg = require('./SVG/Hamburger_Menu.svg');
 
 
-const Menu = ({backimg, sharkimg, hamimg, onClick, props, ref}) => <div className='menu'>
+const Menu = ({backimg, sharkimg, hamimg, onClick, props, ref}) => { 
+
+return <div className='menu'>
         <div className="menu_closed">
             <div className='back_icon'>
                 <img id="back_icon_inner" className="icons" src={backimg} />
             </div>
             <div className="shark_icon">
+                
                 <Link href="/index"><img id="shark_icon_inner" className="icons" src={sharkimg}/></Link>
             </div>
             <div className="ham_icon">
-                <img id="ham_icon_inner" className="icons" src={hamimg} onClick={onClick}/>
+                <img id="ham_icon_inner" className="icons" src={hamimg} onClick={onClick} />
             </div>
         </div>
             <div className="menu_items">
                     <div className="menu_items_inner">
-                        <a href="/index"><Header ref={ref} className="Home" fontSize="50px" color={"#FFF"} text={"Home"} /></a>
+                        <a id="home" href="/index"><Header ref={ref} fontSize="50px" color={"#FFF"} text={"Home"} /></a>
                     </div>
                     <div className="menu_items_inner">
-                        <a href="/GamePage"><Header fontSize="50px" color={"#FFF"} text={"Game"}/></a>
+                        <a id="game" href="/GamePage"><Header fontSize="50px" color={"#FFF"} text={"Game"}/></a>
                     </div>
                     <div className="menu_items_inner">
-                        <a href="/AboutPage"><Header fontSize="50px" color={"#FFF"} text={"About"}/></a>
+                        <a id="about" href="/AboutPage"><Header fontSize="50px" color={"#FFF"} text={"About"}/></a>
                     </div>
                     <div className="menu_items_inner">
-                        <a href="/HelpPage"><Header fontSize="50px" color={"#FFF"} text={"How to Help"}/></a>
+                        <a id="help" href="/HelpPage"><Header fontSize="50px" color={"#FFF"} text={"How to Help"}/></a>
                     </div>
             </div>
 </div>
 
+}
 var menu_state = true;
 
 function HamburgerClick(){
@@ -49,6 +53,7 @@ function HamburgerClick(){
         menu_state = true;
     }
 
+
     // useEffect(()=>{
     //     document.querySelector(".menu_items").style.transition="all 0.75s";
     //     setTimeout(()=>{
@@ -61,7 +66,8 @@ function HamburgerClick(){
         backimg: backImg,
         sharkimg: sharkImg,
         hamimg: hamImg,
-        onClick:HamburgerClick
+        onClick:HamburgerClick,
     }
+
 
 export default Menu;
