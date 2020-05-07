@@ -8,7 +8,9 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Orange)">
-    <circle id="Orange-2" data-name="Orange" cx="45" cy="45" r="45" transform="translate(22.5 22.5)" fill="#ff7f00"/>
+  <g id="Endangered" transform="translate(22.5 22.5)">
+    <g transform="matrix(1, 0, 0, 1, -22.5, -22.5)" filter="url(#Orange)">
+      <circle id="Orange-2" data-name="Orange" cx="45" cy="45" r="45" transform="translate(22.5 22.5)" fill="#ff7f00"/>
+    </g>
   </g>
 </svg>
