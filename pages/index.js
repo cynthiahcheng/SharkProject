@@ -3,7 +3,7 @@ import Link from 'next/link';
 import './index.css';
 import CustomButton from '../comps/CustomButton';
 
-import {data, ChangeData} from './data';
+import {data, ChangeData} from '../data';
 
 console.log(data);
 
@@ -27,18 +27,18 @@ return <div className="title_page">
 
     <div id="tutorial_button">
             <Link href="/TutPage"><CustomButton color={tutcolor} text={"TUTORIAL"} onClick={()=>{
-                ChangeData({
-                    lastaction:"change this"
-                })
+                // ChangeData({
+                //     lastaction:"change this"
+                // })
                 var new_color = "#999";
                 setTutColor(new_color);
                 }} /></Link>
         </div>
         <div id="start_button">
             <Link href="/GamePage"><CustomButton color={color} text={"START"} fontsize={"90px"} onClick={()=>{
-                ChangeData({
-                   lastaction:"change this"
-                })
+                // ChangeData({
+                //    lastaction:"change this"
+                // })
                 var new_color = "#999";
                 setColor(new_color);
                 }} /></Link>

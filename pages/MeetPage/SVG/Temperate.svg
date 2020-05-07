@@ -1,6 +1,11 @@
-<svg id="Temperate" xmlns="http://www.w3.org/2000/svg" width="72.12" height="103.33" viewBox="0 0 72.12 103.33">
-  <g id="Rain">
-    <path id="Path_10" data-name="Path 10" d="M175.06,113.452a36.061,36.061,0,0,1-72.12,0c0-19.764,19.545-55.625,36.06-67.552C154.737,58.106,175.06,93.7,175.06,113.452Z" transform="translate(-102.94 -45.9)" fill="#61bbff"/>
-    <path id="Path_11" data-name="Path 11" d="M167.7,363.058c-3.867,3.864-17.169.273-25.449-8.016s-10.3-21.756-6.44-25.61,7.123,8.954,15.409,17.243S171.561,359.191,167.7,363.058Z" transform="translate(-124.94 -271.155)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="83" viewBox="0 0 80 83">
+  <g id="Group_55" data-name="Group 55" transform="translate(604 -427)">
+    <rect id="Rectangle_63" data-name="Rectangle 63" width="80" height="83" transform="translate(-604 427)" fill="none"/>
+    <g id="Temperate" transform="translate(-586.453 436.622)">
+      <g id="Rain">
+        <path id="Path_10" data-name="Path 10" d="M147.966,89.1a22.516,22.516,0,1,1-45.026,0c0-12.641,12.2-35.576,22.513-43.2C135.278,53.707,147.966,76.47,147.966,89.1Z" transform="translate(-102.94 -45.9)" fill="#61bbff"/>
+        <path id="Path_11" data-name="Path 11" d="M155.055,350.208c-2.42,2.418-10.743.171-15.923-5.016s-6.443-13.613-4.029-16.024,4.457,5.6,9.641,10.789S157.473,347.788,155.055,350.208Z" transform="translate(-127.48 -291.682)" fill="#fff"/>
+      </g>
+    </g>
   </g>
 </svg>

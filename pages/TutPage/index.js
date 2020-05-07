@@ -3,7 +3,7 @@ import Link from 'next/link';
 import './tutpage.css';
 import CustomButton from '../../comps/CustomButton';
 
-import {data, ChangeData} from '../data';
+import {data, ChangeData} from '../../data';
 
 console.log(data);
 

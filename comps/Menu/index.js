@@ -14,7 +14,7 @@ const Menu = ({backimg, sharkimg, hamimg, onClick, props, ref}) => <div classNam
                 <img id="back_icon_inner" className="icons" src={backimg} />
             </div>
             <div className="shark_icon">
-                <Link href="/index"><img id="shark_icon_inner" className="icons" src={sharkimg} /></Link>
+                <Link href="/index"><img id="shark_icon_inner" className="icons" src={sharkimg}/></Link>
             </div>
             <div className="ham_icon">
                 <img id="ham_icon_inner" className="icons" src={hamimg} onClick={onClick}/>

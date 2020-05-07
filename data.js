@@ -1,5 +1,4 @@
 export var data = {
-    lastaction:"",
     size:"",
     location:"",
     status:"",
