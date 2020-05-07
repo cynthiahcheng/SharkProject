@@ -49,11 +49,12 @@ function HamburgerClick(){
         menu_state = true;
     }
 
-//     useEffect(()=>{
-//         setTimeout(()=>{
-//             document.querySelector(".menu_items").style.opacity="0.100%";
-//         }, 50);
-//         }, []);
+    // useEffect(()=>{
+    //     document.querySelector(".menu_items").style.transition="all 0.75s";
+    //     setTimeout(()=>{
+    //     document.querySelector(".menu_items").style.opacity="100%";
+    //     }, 500);
+    // }, []);
 }
 
     Menu.defaultProps = {

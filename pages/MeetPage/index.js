@@ -24,12 +24,35 @@ const sharkResult0 = require('./SVG/sharky1.svg');
 const sharkResult1 = require('./SVG/catshark.svg');
 const sharkResult2 = require('./SVG/dogfish.svg');
 const sharkResult3 = require('./SVG/lanternshark.svg');
-
+const sharkResult4 = require('./SVG/blacktip.svg');
+const sharkResult5 = require('./SVG/pygmy.svg');
+const sharkResult6 = require('./SVG/sawshark.svg');
+const sharkResult7 = require('./SVG/otodus.svg');
+const sharkResult8 = require('./SVG/zebra.svg');
+const sharkResult9 = require('./SVG/hammerhead.svg');
+const sharkResult10 = require('./SVG/hammerhead2.svg');
+const sharkResult11 = require('./SVG/porbeagle.svg');
+const sharkResult12 = require('./SVG/greyreef.svg');
+const sharkResult13 = require('./SVG/bullshark.svg');
+const sharkResult14 = require('./SVG/salmonshark.svg');
+const sharkResult15 = require('./SVG/megamouth.svg');
+const sharkResult16 = require('./SVG/thresher.svg');
+const sharkResult17 = require('./SVG/baskingshark.svg');
+const sharkResult18 = require('./SVG/whaleshark.svg');
+const sharkResult19 = require('./SVG/greatwhite.svg');
+const sharkResult20 = require('./SVG/pacificsleeper.svg');
+const sharkResult21 = require('./SVG/tigershark.svg');
+const sharkResult22 = require('./SVG/bluntnoseshark.svg');
+const sharkResult23 = require('./SVG/greenland.svg');
 
 const MeetPage = ({backbtn, sharksize, 
     sharklocation1, sharklocation2, sharklocation3,
     safestatus, endangeredstatus, extinctstatus, 
-    sharkresult0, sharkresult1, sharkresult2, sharkresult3}) => {
+    sharkresult0, sharkresult1, sharkresult2, sharkresult3, sharkresult4, 
+    sharkresult5, sharkresult6, sharkresult7, sharkresult8, sharkresult9,
+    sharkresult10, sharkresult11, sharkresult12, sharkresult13, sharkresult14,
+    sharkresult15, sharkresult16, sharkresult17, sharkresult18, sharkresult19,
+    sharkresult20, sharkresult21, sharkresult22, sharkresult23}) => {
     const [color, setColor] = useState("#00D2AE");
     const [sharksrc, setShark] = useState(sharkresult0);
     const [sharkname, setName] = useState("Shark Name");
@@ -39,13 +62,12 @@ const MeetPage = ({backbtn, sharksize,
     const [areatext, setAreaText] = useState("tropical");
     const [healthtext, setHealthText] = useState("safe");
 
-    // useEffect(()=>{
-    //     setTimeout(()=>{
-    //     document.querySelector(".meet_page").style.opacity="100%";
-    //     document.querySelector(".meet_page").style.transition="opacity, linear";
-    //     document.querySelector(".shark_result_img").style.left=0;
-    //     }, 500);
-    // }, []);
+    useEffect(()=>{
+        document.querySelector("#shark_result_img").style.transition="all 0.75s";
+        setTimeout(()=>{
+        document.querySelector("#shark_result_img").style.opacity="100%";
+        }, 200);
+    }, []);
 
     return <div className="meet_page"> 
         <Menu />
@@ -104,7 +126,7 @@ function ChangeShark(){
         setHealth(new_health);
         var new_healthtext = "Extinct";
         setHealthText(new_healthtext);
-    } else if(data.size === "small" && data.location === "temperate" && data.status === "extinct"){
+    }else if(data.size === "small" && data.location === "temperate" && data.status === "extinct"){
         var new_shark = sharkresult2;
         setShark(new_shark);
         var new_name = "Granular Dogfish Shark";
@@ -119,7 +141,7 @@ function ChangeShark(){
         setHealth(new_health);
         var new_healthtext = "Extinct";
         setHealthText(new_healthtext);
-    } else if(data.size === "small" && data.location === "polar" && data.status === "extinct"){
+    }else if(data.size === "small" && data.location === "polar" && data.status === "extinct"){
         var new_shark = sharkresult1;
         setShark(new_shark);
         var new_name = "Iceland Catshark";
@@ -134,7 +156,7 @@ function ChangeShark(){
         setHealth(new_health);
         var new_healthtext = "Extinct";
         setHealthText(new_healthtext);
-    } else if(data.size === "small" && data.location === "tropical" && data.status === "endangered"){
+    }else if(data.size === "small" && data.location === "tropical" && data.status === "endangered"){
         var new_shark = sharkresult3;
         setShark(new_shark);
         var new_name = "Dwarf Lanternshark";
@@ -148,6 +170,351 @@ function ChangeShark(){
         var new_health = endangeredstatus;
         setHealth(new_health);
         var new_healthtext = "Endangered";
+        setHealthText(new_healthtext);
+    }else if(data.size === "small" && data.location === "temperate" && data.status === "endangered"){
+        var new_shark = sharkresult2;
+        setShark(new_shark);
+        var new_name = "Spiny Dogfish";
+        setName(new_name);
+        var new_sizetext = "Small";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation2;
+        setArea(new_area);
+        var new_areatext = "Temperate";
+        setAreaText(new_areatext);
+        var new_health = endangeredstatus;
+        setHealth(new_health);
+        var new_healthtext = "Endangered";
+        setHealthText(new_healthtext);
+    }else if(data.size === "small" && data.location === "polar" && data.status === "endangered"){
+        var new_shark = sharkresult3;
+        setShark(new_shark);
+        var new_name = "African Lanternshark";
+        setName(new_name);
+        var new_sizetext = "Small";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation3;
+        setArea(new_area);
+        var new_areatext = "Polar";
+        setAreaText(new_areatext);
+        var new_health = endangeredstatus;
+        setHealth(new_health);
+        var new_healthtext = "Endangered";
+        setHealthText(new_healthtext);
+    }else if(data.size === "small" && data.location === "tropical" && data.status === "safe"){
+        var new_shark = sharkresult4;
+        setShark(new_shark);
+        var new_name = "Blacktip Reef Shark";
+        setName(new_name);
+        var new_sizetext = "Small";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation1;
+        setArea(new_area);
+        var new_areatext = "Tropical";
+        setAreaText(new_areatext);
+        var new_health = safestatus;
+        setHealth(new_health);
+        var new_healthtext = "Safe";
+        setHealthText(new_healthtext);
+    }else if(data.size === "small" && data.location === "temperate" && data.status === "safe"){
+        var new_shark = sharkresult5;
+        setShark(new_shark);
+        var new_name = "Spined Pygmy Shark";
+        setName(new_name);
+        var new_sizetext = "Small";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation2;
+        setArea(new_area);
+        var new_areatext = "Temperate";
+        setAreaText(new_areatext);
+        var new_health = safestatus;
+        setHealth(new_health);
+        var new_healthtext = "Safe";
+        setHealthText(new_healthtext);
+    }else if(data.size === "small" && data.location === "polar" && data.status === "safe"){
+        var new_shark = sharkresult1;
+        setShark(new_shark);
+        var new_name = "Pale Catshark";
+        setName(new_name);
+        var new_sizetext = "Small";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation3;
+        setArea(new_area);
+        var new_areatext = "Polar";
+        setAreaText(new_areatext);
+        var new_health = safestatus;
+        setHealth(new_health);
+        var new_healthtext = "Safe";
+        setHealthText(new_healthtext);
+    }else if(data.size === "medium" && data.location === "tropical" && data.status === "extinct"){
+        var new_shark = sharkresult6;
+        setShark(new_shark);
+        var new_name = "Sawshark";
+        setName(new_name);
+        var new_sizetext = "Medium";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation1;
+        setArea(new_area);
+        var new_areatext = "Tropical";
+        setAreaText(new_areatext);
+        var new_health = extinctstatus;
+        setHealth(new_health);
+        var new_healthtext = "Extinct";
+        setHealthText(new_healthtext);
+    }else if(data.size === "medium" && data.location === "temperate" && data.status === "extinct"){
+        var new_shark = sharkresult7;
+        setShark(new_shark);
+        var new_name = "Otodus Shark";
+        setName(new_name);
+        var new_sizetext = "Medium";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation2;
+        setArea(new_area);
+        var new_areatext = "Temperate";
+        setAreaText(new_areatext);
+        var new_health = extinctstatus;
+        setHealth(new_health);
+        var new_healthtext = "Extinct";
+        setHealthText(new_healthtext);
+    }else if(data.size === "medium" && data.location === "polar" && data.status === "extinct"){
+        var new_shark = sharkresult8;
+        setShark(new_shark);
+        var new_name = "Zebra Shark";
+        setName(new_name);
+        var new_sizetext = "Medium";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation3;
+        setArea(new_area);
+        var new_areatext = "Polar";
+        setAreaText(new_areatext);
+        var new_health = extinctstatus;
+        setHealth(new_health);
+        var new_healthtext = "Extinct";
+        setHealthText(new_healthtext);
+    }else if(data.size === "medium" && data.location === "tropical" && data.status === "endangered"){
+        var new_shark = sharkresult9;
+        setShark(new_shark);
+        var new_name = "Great Hammerhead";
+        setName(new_name);
+        var new_sizetext = "Medium";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation1;
+        setArea(new_area);
+        var new_areatext = "Tropical";
+        setAreaText(new_areatext);
+        var new_health = endangeredstatus;
+        setHealth(new_health);
+        var new_healthtext = "Endangered";
+        setHealthText(new_healthtext);
+    }else if(data.size === "medium" && data.location === "temperate" && data.status === "endangered"){
+        var new_shark = sharkresult10;
+        setShark(new_shark);
+        var new_name = "Smalleye Hammerhead";
+        setName(new_name);
+        var new_sizetext = "Medium";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation2;
+        setArea(new_area);
+        var new_areatext = "Temperate";
+        setAreaText(new_areatext);
+        var new_health = endangeredstatus;
+        setHealth(new_health);
+        var new_healthtext = "Endangered";
+        setHealthText(new_healthtext);
+    }else if(data.size === "medium" && data.location === "polar" && data.status === "endangered"){
+        var new_shark = sharkresult11;
+        setShark(new_shark);
+        var new_name = "Porbeagle Shark";
+        setName(new_name);
+        var new_sizetext = "Medium";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation3;
+        setArea(new_area);
+        var new_areatext = "Polar";
+        setAreaText(new_areatext);
+        var new_health = endangeredstatus;
+        setHealth(new_health);
+        var new_healthtext = "Endangered";
+        setHealthText(new_healthtext);
+    }else if(data.size === "medium" && data.location === "tropical" && data.status === "safe"){
+        var new_shark = sharkresult12;
+        setShark(new_shark);
+        var new_name = "Grey Reef Shark";
+        setName(new_name);
+        var new_sizetext = "Medium";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation1;
+        setArea(new_area);
+        var new_areatext = "Tropical";
+        setAreaText(new_areatext);
+        var new_health = safestatus;
+        setHealth(new_health);
+        var new_healthtext = "Safe";
+        setHealthText(new_healthtext);
+    }else if(data.size === "medium" && data.location === "temperate" && data.status === "safe"){
+        var new_shark = sharkresult13;
+        setShark(new_shark);
+        var new_name = "Bull Shark";
+        setName(new_name);
+        var new_sizetext = "Medium";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation2;
+        setArea(new_area);
+        var new_areatext = "Temperate";
+        setAreaText(new_areatext);
+        var new_health = safestatus;
+        setHealth(new_health);
+        var new_healthtext = "Safe";
+        setHealthText(new_healthtext);
+    }else if(data.size === "medium" && data.location === "polar" && data.status === "safe"){
+        var new_shark = sharkresult14;
+        setShark(new_shark);
+        var new_name = "Salmon Shark";
+        setName(new_name);
+        var new_sizetext = "Medium";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation3;
+        setArea(new_area);
+        var new_areatext = "Polar";
+        setAreaText(new_areatext);
+        var new_health = safestatus;
+        setHealth(new_health);
+        var new_healthtext = "Safe";
+        setHealthText(new_healthtext);
+    }else if(data.size === "large" && data.location === "tropical" && data.status === "extinct"){
+        var new_shark = sharkresult15;
+        setShark(new_shark);
+        var new_name = "Megamouth Shark";
+        setName(new_name);
+        var new_sizetext = "Large";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation1;
+        setArea(new_area);
+        var new_areatext = "Tropical";
+        setAreaText(new_areatext);
+        var new_health = extinctstatus;
+        setHealth(new_health);
+        var new_healthtext = "Extinct";
+        setHealthText(new_healthtext);
+    }else if(data.size === "large" && data.location === "temperate" && data.status === "extinct"){
+        var new_shark = sharkresult16;
+        setShark(new_shark);
+        var new_name = "Thresher Shark";
+        setName(new_name);
+        var new_sizetext = "Large";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation2;
+        setArea(new_area);
+        var new_areatext = "Temperate";
+        setAreaText(new_areatext);
+        var new_health = extinctstatus;
+        setHealth(new_health);
+        var new_healthtext = "Extinct";
+        setHealthText(new_healthtext);
+    }else if(data.size === "large" && data.location === "polar" && data.status === "extinct"){
+        var new_shark = sharkresult17;
+        setShark(new_shark);
+        var new_name = "Basking Shark";
+        setName(new_name);
+        var new_sizetext = "Large";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation3;
+        setArea(new_area);
+        var new_areatext = "Polar";
+        setAreaText(new_areatext);
+        var new_health = extinctstatus;
+        setHealth(new_health);
+        var new_healthtext = "Extinct";
+        setHealthText(new_healthtext);
+    }else if(data.size === "large" && data.location === "tropical" && data.status === "endangered"){
+        var new_shark = sharkresult18;
+        setShark(new_shark);
+        var new_name = "Whale Shark";
+        setName(new_name);
+        var new_sizetext = "Large";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation1;
+        setArea(new_area);
+        var new_areatext = "Tropical";
+        setAreaText(new_areatext);
+        var new_health = endangeredstatus;
+        setHealth(new_health);
+        var new_healthtext = "Endagered";
+        setHealthText(new_healthtext);
+    }else if(data.size === "large" && data.location === "temperate" && data.status === "endangered"){
+        var new_shark = sharkresult19;
+        setShark(new_shark);
+        var new_name = "Great White Shark";
+        setName(new_name);
+        var new_sizetext = "Large";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation2;
+        setArea(new_area);
+        var new_areatext = "Temperate";
+        setAreaText(new_areatext);
+        var new_health = endangeredstatus;
+        setHealth(new_health);
+        var new_healthtext = "Endagered";
+        setHealthText(new_healthtext);
+    }else if(data.size === "large" && data.location === "polar" && data.status === "endangered"){
+        var new_shark = sharkresult20;
+        setShark(new_shark);
+        var new_name = "Pacific Sleeper Shark";
+        setName(new_name);
+        var new_sizetext = "Large";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation3;
+        setArea(new_area);
+        var new_areatext = "Polar";
+        setAreaText(new_areatext);
+        var new_health = endangeredstatus;
+        setHealth(new_health);
+        var new_healthtext = "Endagered";
+        setHealthText(new_healthtext);
+    }else if(data.size === "large" && data.location === "tropical" && data.status === "safe"){
+        var new_shark = sharkresult21;
+        setShark(new_shark);
+        var new_name = "Tiger Shark";
+        setName(new_name);
+        var new_sizetext = "Large";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation1;
+        setArea(new_area);
+        var new_areatext = "Tropical";
+        setAreaText(new_areatext);
+        var new_health = safestatus;
+        setHealth(new_health);
+        var new_healthtext = "Safe";
+        setHealthText(new_healthtext);
+    }else if(data.size === "large" && data.location === "temperate" && data.status === "safe"){
+        var new_shark = sharkresult22;
+        setShark(new_shark);
+        var new_name = "Bluntnose Sixgill Shark";
+        setName(new_name);
+        var new_sizetext = "Large";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation2;
+        setArea(new_area);
+        var new_areatext = "Temperate";
+        setAreaText(new_areatext);
+        var new_health = safestatus;
+        setHealth(new_health);
+        var new_healthtext = "Safe";
+        setHealthText(new_healthtext);
+    }else if(data.size === "large" && data.location === "polar" && data.status === "safe"){
+        var new_shark = sharkresult23;
+        setShark(new_shark);
+        var new_name = "Greenland Shark";
+        setName(new_name);
+        var new_sizetext = "Large";
+        setSizeText(new_sizetext);
+        var new_area = sharklocation3;
+        setArea(new_area);
+        var new_areatext = "Polar";
+        setAreaText(new_areatext);
+        var new_health = safestatus;
+        setHealth(new_health);
+        var new_healthtext = "Safe";
         setHealthText(new_healthtext);
     }
 }
@@ -170,6 +537,26 @@ MeetPage.defaultProps = {
     sharkresult1:sharkResult1,
     sharkresult2:sharkResult2,
     sharkresult3:sharkResult3,
+    sharkresult4:sharkResult4,
+    sharkresult5:sharkResult5,
+    sharkresult6:sharkResult6,
+    sharkresult7:sharkResult7,
+    sharkresult8:sharkResult8,
+    sharkresult9:sharkResult9,
+    sharkresult10:sharkResult10,
+    sharkresult11:sharkResult11,
+    sharkresult12:sharkResult12,
+    sharkresult13:sharkResult13,
+    sharkresult14:sharkResult14,
+    sharkresult15:sharkResult15,
+    sharkresult16:sharkResult16,
+    sharkresult17:sharkResult17,
+    sharkresult18:sharkResult18,
+    sharkresult19:sharkResult19,
+    sharkresult20:sharkResult20,
+    sharkresult21:sharkResult21,
+    sharkresult22:sharkResult22,
+    sharkresult23:sharkResult23,
 }
 
 export default MeetPage;
