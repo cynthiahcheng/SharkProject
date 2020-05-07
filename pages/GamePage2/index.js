@@ -9,8 +9,8 @@ const Temperate = require('./SVG/Temperate.png');
 const Tropical = require('./SVG/Tropical.png');
 const backBtn = require('./SVG/back_btn.svg');
 
-import {data, ChangeData} from '../data';
-
+import {data, ChangeData} from '../../data';
+import Router from 'next/router';
 console.log(data);
 
 const GamePage2 = ({tropical, temperate, polar, backbtn}) => <div className="game_page2">
@@ -18,38 +18,38 @@ const GamePage2 = ({tropical, temperate, polar, backbtn}) => <div className="gam
 <Link href="/GamePage"><div id="back_btn"><img src={backbtn} /></div></Link>
 <div id="pick_location"><Header color={"#FFF"} text={"2. Pick the location."}/></div>
 
-<Link href="/GamePage3"><div className="location" onClick={()=>{
-        ChangeData({
-            location:"tropical"
-        })
+<div className="location" onClick={()=>{
+        data.location = "tropical";
+        ChangeData(data);
+        Router.push("/GamePage3");
     }}>
     <div className="location_icons">
         <img id="tropical_icon" src={tropical} />
     </div>
     <div className="location_title"><Header color={"#FFF"} text={"tropical"} /></div>
-</div></Link>
+</div>
 
-<Link href="/GamePage3"><div className="location" onClick={()=>{
-        ChangeData({
-            size:"temperate"
-        })
+<div className="location" onClick={()=>{
+        data.location = "temperate";
+        ChangeData(data);
+        Router.push("/GamePage3");
     }}>
     <div className="location_icons">
         <img id="temperate_icon" src={temperate} />
     </div>
     <div className="location_title"><Header color={"#FFF"} text={"temperate"} /></div>
-</div></Link>
+</div>
 
-<Link href="/GamePage3"><div className="location" onClick={()=>{
-        ChangeData({
-            size:"polar"
-        })
+<div className="location" onClick={()=>{
+       data.location = "polar";
+       ChangeData(data);
+       Router.push("/GamePage3");
     }}>
     <div className="location_icons">
         <img id="polar_icon" src={polar} />
     </div>
     <div className="location_title"><Header color={"#FFF"} text={"polar"} /></div>
-</div></Link>
+</div>
 
 </div>
 
