@@ -10,8 +10,8 @@ console.log(data);
 
 
 const Endangered = require('./SVG/orange.png');
-const Safe = require('./SVG/safe.svg');
-const Extinct = require('./SVG/extinct.svg');
+const Safe = require('./SVG/Safe.png');
+const Extinct = require('./SVG/Extinct.png');
 const backBtn = require('./SVG/back_btn.svg');
 
 const GamePage3 = ({endangered, safe, extinct, backbtn}) => <div className="game_page3">
