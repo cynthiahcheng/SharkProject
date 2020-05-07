@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Link from 'next/link';
 import './gamepage2.css';
 import Header from '../../comps/Header';
@@ -13,7 +13,22 @@ import {data, ChangeData} from '../../data';
 import Router from 'next/router';
 console.log(data);
 
-const GamePage2 = ({tropical, temperate, polar, backbtn}) => <div className="game_page2">
+const GamePage2 = ({tropical, temperate, polar, backbtn}) => {
+
+    useEffect(()=>{
+        document.querySelector("#tropical_icon").style.transition="1s";
+        document.querySelector("#temperate_icon").style.transition="1.5s";
+        document.querySelector("#polar_icon").style.transition="2s";
+        document.querySelector("#pick_location").style.transition="0.5s ease-out";
+        setTimeout(()=>{
+        document.querySelector("#pick_location").style.left="0";
+        document.querySelector("#tropical_icon").style.opacity="100%";
+        document.querySelector("#temperate_icon").style.opacity="100%";
+        document.querySelector("#polar_icon").style.opacity="100%";
+        }, 100);
+    }, []);
+
+return <div className="game_page2">
 <Menu />
 <Link href="/GamePage"><div id="back_btn"><img src={backbtn} /></div></Link>
 <div id="pick_location"><Header color={"#FFF"} text={"2. Pick the location."}/></div>
@@ -52,6 +67,7 @@ const GamePage2 = ({tropical, temperate, polar, backbtn}) => <div className="gam
 </div>
 
 </div>
+}
 
 GamePage2.defaultProps = {
     tropical:Tropical,

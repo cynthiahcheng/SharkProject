@@ -12,6 +12,8 @@ body, html {
 #pick_shark {
     margin-left:10px;
     margin-right:10px;
+    position:relative;
+    left:100%;
 }
 
 .size {
@@ -40,3 +42,7 @@ body, html {
      margin-bottom:5px;;
      cursor:pointer;
  } 
+
+ #small_icon, #med_icon, #large_icon {
+    opacity:0;
+ }

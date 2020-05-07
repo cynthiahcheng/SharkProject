@@ -21,6 +21,8 @@ body, html {
  #how_endangered {
      margin-left:20px;
      margin-right:20px;
+     position:relative;
+     left:100%;
  }
 
 .status {
@@ -40,4 +42,8 @@ body, html {
      margin-top:-20px;
      margin-bottom:5px;;
      cursor:pointer;
+ }
+
+ #safe_icon, #endangered_icon, #extinct_icon {
+     opacity:0;
  }
