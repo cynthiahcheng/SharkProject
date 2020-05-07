@@ -16,9 +16,10 @@ body, html {
 
  #shark_name {
      position:relative;
-     bottom:10px;
+     bottom:5px;
      margin-left:20px;
      margin-right:20px;
+     margin-bottom:20px;
  }
 
  .shark_result {
@@ -29,10 +30,11 @@ body, html {
 
  #shark_result_img {
      background-color:rgba(255, 255, 255, 0.938);
-     padding: 20px 30px 20px 30px;
+     padding:30px;
      border-radius:15px;
      position:relative;
      width:60%;
+     opacity:0%;
      /* left:100%; */
  }
  
