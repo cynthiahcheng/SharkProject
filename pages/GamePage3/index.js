@@ -9,7 +9,7 @@ import Router from 'next/router';
 console.log(data);
 
 
-const Endangered = require('./SVG/endangered.svg');
+const Endangered = require('./SVG/orange.png');
 const Safe = require('./SVG/safe.svg');
 const Extinct = require('./SVG/extinct.svg');
 const backBtn = require('./SVG/back_btn.svg');
