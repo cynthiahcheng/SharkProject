@@ -29,7 +29,9 @@ const GamePage = ({smallshark, medshark, largeshark, backbtn}) => {
         }, 100);
     }, []);
 
-return <div className="game_page">
+return <div className="game_page" onLoad={()=>{
+    window.scrollTo(0,0);
+}}>
     <Menu />
     <Link href="/index"><div id="back_btn"><img src={backbtn} /></div></Link>
     <div id="pick_shark"><Header color={"#FFF"} text={"1. Pick the size of your shark."} /></div>
