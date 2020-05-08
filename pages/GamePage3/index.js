@@ -17,9 +17,9 @@ const backBtn = require('./SVG/back_btn.svg');
 const GamePage3 = ({endangered, safe, extinct, backbtn}) => {
 
     useEffect(()=>{
-        document.querySelector("#how_endangered").style.transition="1s";
-        document.querySelector("#safe_icon").style.transition="1.5s";
-        document.querySelector("#endangered_icon").style.transition="2s";
+        document.querySelector("#how_endangered").style.transition="0.75s ease-out";
+        document.querySelector("#safe_icon").style.transition="0.75s ease-out";
+        document.querySelector("#endangered_icon").style.transition="0.75s ease-out";
         document.querySelector("#extinct_icon").style.transition="0.5s ease-out";
         setTimeout(()=>{
         document.querySelector("#how_endangered").style.left="0";
@@ -30,7 +30,9 @@ const GamePage3 = ({endangered, safe, extinct, backbtn}) => {
     }, []);
 
 
-return <div className="game_page3">
+return <div className="game_page3" onLoad={()=>{
+    window.scrollTo(0,0);
+}}>
 <Menu />
 <Link href="/GamePage2"><div id="back_btn"><img src={backbtn} /></div></Link>
 <div id="how_endangered"><Header color={"#FFF"} text={"3. How endangered is the shark?"}/></div>
@@ -39,6 +41,10 @@ return <div className="game_page3">
         data.status = "safe";
         ChangeData(data);
         Router.push("/MeetPage");
+    }} onMouseEnter={()=>{
+        document.querySelector("#safe_icon").style.width = "175px";
+    }} onMouseLeave={()=>{
+        document.querySelector("#safe_icon").style.width = "135px";
     }}>
     <div className="status_icons">
         <img id="safe_icon" src={safe} />
@@ -50,6 +56,10 @@ return <div className="game_page3">
         data.status = "endangered";
         ChangeData(data);
         Router.push("/MeetPage");
+    }} onMouseEnter={()=>{
+        document.querySelector("#endangered_icon").style.width = "175px";
+    }} onMouseLeave={()=>{
+        document.querySelector("#endangered_icon").style.width = "135px";
     }}>
     <div className="status_icons">
         <img id="endangered_icon" src={endangered} />
@@ -61,6 +71,10 @@ return <div className="game_page3">
         data.status = "extinct";
         ChangeData(data);
         Router.push("/MeetPage");
+    }} onMouseEnter={()=>{
+        document.querySelector("#extinct_icon").style.width = "175px";
+    }} onMouseLeave={()=>{
+        document.querySelector("#extinct_icon").style.width = "135px";
     }}>
     <div className="status_icons">
         <img id="extinct_icon" src={extinct} />

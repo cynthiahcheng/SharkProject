@@ -17,7 +17,9 @@ const TutPage = ({logo, page_one, page_two, page_three,page_four}) => {
     const [color, setColor] = useState("#00D2AE");
     const [tutcolor, setTutColor] = useState("#5A9DFF");
 
-    return <div className="tutorial_page">
+    return <div className="tutorial_page" onLoad={()=>{
+        window.scrollTo(0,0);
+    }}>
         <div className="logo">
             <img id="shark_logo" src={logo} />
         </div>

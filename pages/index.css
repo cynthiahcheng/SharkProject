@@ -12,9 +12,13 @@ body, html {
     padding-bottom:30px;
 }
 
+.sub_header {
+    max-width:500px;
+}
+
 .sub_header_text {
     font-family:'open-sans', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color:#FFF;
     text-align: center;
     margin-top:20px;

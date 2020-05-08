@@ -16,9 +16,9 @@ console.log(data);
 const GamePage2 = ({tropical, temperate, polar, backbtn}) => {
 
     useEffect(()=>{
-        document.querySelector("#tropical_icon").style.transition="1s";
-        document.querySelector("#temperate_icon").style.transition="1.5s";
-        document.querySelector("#polar_icon").style.transition="2s";
+        document.querySelector("#tropical_icon").style.transition="0.75s ease-out";
+        document.querySelector("#temperate_icon").style.transition="0.75s ease-out";
+        document.querySelector("#polar_icon").style.transition="0.75s ease-out";
         document.querySelector("#pick_location").style.transition="0.5s ease-out";
         setTimeout(()=>{
         document.querySelector("#pick_location").style.left="0";
@@ -28,7 +28,9 @@ const GamePage2 = ({tropical, temperate, polar, backbtn}) => {
         }, 100);
     }, []);
 
-return <div className="game_page2">
+return <div className="game_page2" onLoad={()=>{
+    window.scrollTo(0,0);
+}}>
 <Menu />
 <Link href="/GamePage"><div id="back_btn"><img src={backbtn} /></div></Link>
 <div id="pick_location"><Header color={"#FFF"} text={"2. Pick the location."}/></div>
@@ -37,6 +39,10 @@ return <div className="game_page2">
         data.location = "tropical";
         ChangeData(data);
         Router.push("/GamePage3");
+    }} onMouseEnter={()=>{
+        document.querySelector("#tropical_icon").style.width = "155px";
+    }} onMouseLeave={()=>{
+        document.querySelector("#tropical_icon").style.width = "135px";
     }}>
     <div className="location_icons">
         <img id="tropical_icon" src={tropical} />
@@ -48,6 +54,10 @@ return <div className="game_page2">
         data.location = "temperate";
         ChangeData(data);
         Router.push("/GamePage3");
+    }} onMouseEnter={()=>{
+        document.querySelector("#temperate_icon").style.width = "101px";
+    }} onMouseLeave={()=>{
+        document.querySelector("#temperate_icon").style.width = "81px";
     }}>
     <div className="location_icons">
         <img id="temperate_icon" src={temperate} />
@@ -59,6 +69,10 @@ return <div className="game_page2">
        data.location = "polar";
        ChangeData(data);
        Router.push("/GamePage3");
+    }} onMouseEnter={()=>{
+        document.querySelector("#polar_icon").style.width = "132px";
+    }} onMouseLeave={()=>{
+        document.querySelector("#polar_icon").style.width = "112px";
     }}>
     <div className="location_icons">
         <img id="polar_icon" src={polar} />

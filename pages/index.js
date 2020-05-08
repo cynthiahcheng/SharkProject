@@ -13,7 +13,9 @@ const Index = ({logo}) => {
     const [color, setColor] = useState("#00D2AE");
     const [tutcolor, setTutColor] = useState("#5A9DFF");
 
-return <div className="title_page">
+return <div className="title_page" onLoad={()=>{
+    window.scrollTo(0,0);
+}}>
     <div className="logo">
             <img id="shark_logo" src={logo} />
         </div>
@@ -21,8 +23,8 @@ return <div className="title_page">
             <div className="tut_header" id="conserva">Conserva</div>
             <div className="tut_header" id="shark">Shark</div>
         </div>
-        <div className="sub_header_text">
-            A children's educational app about shark conservation.
+        <div className="sub_header">
+            <div className="sub_header_text">A children's educational app about sharks and shark conservation</div>
         </div>
 
     <div id="tutorial_button">

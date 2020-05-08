@@ -8,7 +8,9 @@ import Menu from '../../comps/Menu';
 const HelpPage = ({}) => {
     const [color, setColor] = useState("#00D2AE");
 
-    return <div className="help_page">
+    return <div className="help_page" onLoad={()=>{
+        window.scrollTo(0,0);
+    }}>
                 <Menu />
                 <div className="info">
                     <p>Sharks are an essential marine species that are facing extinction because of overfishing. Sharks need all the help they can get, and it's up to us to help them! If you are interested, here are some websites to start with!</p>
