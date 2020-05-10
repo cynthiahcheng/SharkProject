@@ -503,7 +503,7 @@ function ChangeShark(){
         setAreaText(new_areatext);
         var new_health = endangeredstatus;
         setHealth(new_health);
-        var new_healthtext = "Endagered";
+        var new_healthtext = "Endangered";
         setHealthText(new_healthtext);
         document.querySelector("#shark_fact").innerHTML = "The name of this shark refers to its size — this shark is as large as some species of whales." + "</br>" + "</br>" +
         "This shark is a filter feeder like baleen whales." + "</br>" + "</br>" +
@@ -521,7 +521,7 @@ function ChangeShark(){
         setAreaText(new_areatext);
         var new_health = endangeredstatus;
         setHealth(new_health);
-        var new_healthtext = "Endagered";
+        var new_healthtext = "Endangered";
         setHealthText(new_healthtext);
         document.querySelector("#shark_fact").innerHTML = "This shark has no known predators, apart from orcas every now and then." + "</br>" + "</br>" +
         "This shark can live up to 70 years or more." + "</br>" + "</br>" +
@@ -539,7 +539,7 @@ function ChangeShark(){
         setAreaText(new_areatext);
         var new_health = endangeredstatus;
         setHealth(new_health);
-        var new_healthtext = "Endagered";
+        var new_healthtext = "Endangered";
         setHealthText(new_healthtext);
         document.querySelector("#shark_fact").innerHTML = "This shark is a scavenger and predator." + "</br>" + "</br>" +
         "This shark can glide through water without moving its body much, and doesn't make much noise — this makes them great predators." + "</br>" + "</br>" +
