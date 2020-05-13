@@ -11,7 +11,7 @@ const Logo = require('./SVG/Logo_Shark.svg');
 const PageOne = require('./SVG/page_1.svg');
 const PageTwo = require('./SVG/page_two.svg');
 const PageThree = require('./SVG/page_3.svg');
-const PageFour = require('./SVG/page_4.svg');
+const PageFour = require('./SVG/page_four.svg');
 
 const TutPage = ({logo, page_one, page_two, page_three,page_four}) => {
     const [color, setColor] = useState("#00D2AE");
@@ -50,7 +50,7 @@ const TutPage = ({logo, page_one, page_two, page_three,page_four}) => {
 
         <div className="gamepages">
             <img id="page_4" src={page_four} />
-            <div className="body_text"><strong>Page 4:</strong> The result will show you a shark that applies to the
+            <div className="body_text" id="page_four_text" ><strong>Page 4:</strong> The result will show you a shark that applies to the
             3 categories you picked.
             </div>
         </div>

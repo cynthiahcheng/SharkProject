@@ -12,6 +12,7 @@ const HelpPage = ({}) => {
         window.scrollTo(0,0);
     }}>
                 <Menu />
+                <div id="page_title">How You Can Help!</div>
                 <div className="info">
                     <p>Sharks are an essential marine species that are facing extinction because of overfishing. Sharks need all the help they can get, and it's up to us to help them! If you are interested, here are some websites to start with!</p>
                 </div>
@@ -21,7 +22,7 @@ const HelpPage = ({}) => {
                     <h3>https://www.wcs.org/our-work/wildlife/sharks-skates-rays</h3>
                 </div>
                 <div className="thanks">
-                    <p>Thanks for using ConservaShark, we hope you enjoyed learning about shark conservation!</p>
+                    <p>Thanks for using ConservaShark, we hope you enjoyed learning about sharks!</p>
                 </div>
                 <div id="go_home_button">
                     <Link href="/index"><CustomButton color={color} text={"RETURN TO HOME"} fontsize={"30pt"} onClick={()=>{

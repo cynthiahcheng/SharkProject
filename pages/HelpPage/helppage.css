@@ -13,6 +13,14 @@ body, html {
     padding-bottom:30px;
 }
 
+#page_title {
+    font-size:30px;
+    color:#FFF;
+    font-family:'Open Sans', sans-serif;
+    font-weight:bolder;
+    margin-top:20px;
+}
+
 #go_home_button {
     /* display:flex;
     flex-direction:column;
@@ -22,10 +30,10 @@ body, html {
 .info {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    max-width: 306px;
+    max-width: 500px;
     color:#FFF;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
     /* align-items: center; */
     flex-direction: column;
     flex: 2;
@@ -33,11 +41,11 @@ body, html {
 
 .links {
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    max-width: 306px;
+    font-size: 15px;
+    max-width: 500px;
     font-weight: normal;
     color: #9FFFEF;
-    text-align: center;
+    text-align: left;
     /* align-items: center; */
     flex-direction: column;
     flex: 2;
@@ -47,11 +55,15 @@ body, html {
     font-family: 'Open Sans', sans-serif;
     color:#FFF;
     font-size: 25px;
-    max-width: 306px;
+    max-width: 500px;
     font-weight: regular;
-    text-align: center;
+    text-align: left;
     /* align-items: center; */
     flex-direction: column;
     flex: 2;
 }
 
+.info, .links, .thanks, #page_title {
+    margin-right:40px;
+    margin-left:40px;
+}
