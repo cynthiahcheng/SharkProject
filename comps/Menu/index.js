@@ -25,16 +25,40 @@ return <div className='menu'>
         </div>
             <div className="menu_items">
                     <div className="menu_items_inner">
-                        <a id="home" href="/index"><Header ref={ref} fontSize="50px" color={"#FFF"} text={"Home"} /></a>
+                        <a id="home" href="/index"><div className="menu_items_text" id="home_text" onClick={()=>{
+                            document.querySelector("#home_text").style.color = "#00D2AE";
+                        }} onMouseEnter={()=>{
+                            document.querySelector("#home_text").style.color = "#00D2AE";
+                        }} onMouseLeave={()=>{
+                            document.querySelector("#home_text").style.color = "#FFF";
+                        }}>Home</div></a>
                     </div>
                     <div className="menu_items_inner">
-                        <a id="game" href="/GamePage"><Header fontSize="50px" color={"#FFF"} text={"Game"}/></a>
+                        <a id="game" href="/GamePage"><div className="menu_items_text" id="game_text" onClick={()=>{
+                            document.querySelector("#game_text").style.color = "#00D2AE";
+                        }} onMouseEnter={()=>{
+                            document.querySelector("#game_text").style.color = "#00D2AE";
+                        }} onMouseLeave={()=>{
+                            document.querySelector("#game_text").style.color = "#FFF";
+                        }}>Game</div></a>
                     </div>
                     <div className="menu_items_inner">
-                        <a id="about" href="/AboutPage"><Header fontSize="50px" color={"#FFF"} text={"About"}/></a>
+                        <a id="about" href="/AboutPage"><div className="menu_items_text" id="about_text" onClick={()=>{
+                            document.querySelector("#about_text").style.color = "#00D2AE";
+                        }} onMouseEnter={()=>{
+                            document.querySelector("#about_text").style.color = "#00D2AE";
+                        }} onMouseLeave={()=>{
+                            document.querySelector("#about_text").style.color = "#FFF";
+                        }}>About</div></a>
                     </div>
                     <div className="menu_items_inner">
-                        <a id="help" href="/HelpPage"><Header fontSize="50px" color={"#FFF"} text={"How to Help"}/></a>
+                        <a id="help" href="/HelpPage"><div className="menu_items_text" id="help_text" onClick={()=>{
+                            document.querySelector("#help_text").style.color = "#00D2AE";
+                        }} onMouseEnter={()=>{
+                            document.querySelector("#help_text").style.color = "#00D2AE";
+                        }} onMouseLeave={()=>{
+                            document.querySelector("#help_text").style.color = "#FFF";
+                        }}>How to Help</div></a>
                     </div>
             </div>
 </div>

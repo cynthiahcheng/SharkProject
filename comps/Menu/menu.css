@@ -15,6 +15,8 @@ body {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     display:inline-flex;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .back_icon {
@@ -39,7 +41,7 @@ body {
     padding-top: 17px;
     padding-right: 14px;
     cursor:pointer;
-    
+
 }
 
 .menu_items{
@@ -52,12 +54,19 @@ body {
 }
 
 .menu_items_inner {
-    margin-bottom:-30px;
-    margin-top:-30px;
+    /* margin-bottom:-30px;
+    margin-top:-30px; */
     opacity:100%;
     transition:opacity 0.5s ease-in;
 }
 
 a {
     text-decoration: none;
+}
+
+.menu_items_text {
+    color:#FFF;
+    font-size:50px;
+    font-family:Open Sans;
+    font-weight:bold;
 }
